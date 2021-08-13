@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		CF2FE2F326C7061A0040A985 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE2F226C7061A0040A985 /* ContentView.swift */; };
 		CF2FE2F526C7061C0040A985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2FE2F426C7061C0040A985 /* Assets.xcassets */; };
 		CF2FE2F826C7061C0040A985 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2FE2F726C7061C0040A985 /* Preview Assets.xcassets */; };
+		CF2FE30126C7063D0040A985 /* ShapeUp in Frameworks */ = {isa = PBXBuildFile; productRef = CF2FE30026C7063D0040A985 /* ShapeUp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2FE30126C7063D0040A985 /* ShapeUp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = ShapeUpExample;
+			packageProductDependencies = (
+				CF2FE30026C7063D0040A985 /* ShapeUp */,
+			);
 			productName = ShapeUpExample;
 			productReference = CF2FE2ED26C7061A0040A985 /* ShapeUpExample.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = CF2FE2E426C7061A0040A985;
+			packageReferences = (
+				CF2FE2FF26C7063D0040A985 /* XCRemoteSwiftPackageReference "ShapeUp" */,
+			);
 			productRefGroup = CF2FE2EE26C7061A0040A985 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF2FE2FF26C7063D0040A985 /* XCRemoteSwiftPackageReference "ShapeUp" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ryanlintott/ShapeUp.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF2FE30026C7063D0040A985 /* ShapeUp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF2FE2FF26C7063D0040A985 /* XCRemoteSwiftPackageReference "ShapeUp" */;
+			productName = ShapeUp;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CF2FE2E526C7061A0040A985 /* Project object */;
 }

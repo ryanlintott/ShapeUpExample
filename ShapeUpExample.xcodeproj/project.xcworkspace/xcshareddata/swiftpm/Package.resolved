@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ShapeUp",
+        "repositoryURL": "https://github.com/ryanlintott/ShapeUp.git",
+        "state": {
+          "branch": "main",
+          "revision": "25e170a83f46d74010581decc226fbea6e900e9e",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
