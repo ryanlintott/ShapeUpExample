@@ -12,6 +12,12 @@
 		CF2FE2F526C7061C0040A985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2FE2F426C7061C0040A985 /* Assets.xcassets */; };
 		CF2FE2F826C7061C0040A985 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2FE2F726C7061C0040A985 /* Preview Assets.xcassets */; };
 		CF2FE30126C7063D0040A985 /* ShapeUp in Frameworks */ = {isa = PBXBuildFile; productRef = CF2FE30026C7063D0040A985 /* ShapeUp */; };
+		CF2FE30426C706AD0040A985 /* ShapeUpLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30326C706AD0040A985 /* ShapeUpLogo.swift */; };
+		CF2FE30626C706EE0040A985 /* CornerCutRectangleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30526C706EE0040A985 /* CornerCutRectangleExample.swift */; };
+		CF2FE30826C708D20040A985 /* CornerShapeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30726C708D20040A985 /* CornerShapeExample.swift */; };
+		CF2FE30A26C70DC30040A985 /* NotchedRectangleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30926C70DC30040A985 /* NotchedRectangleExample.swift */; };
+		CF2FE30C26C7124B0040A985 /* ShapeLibraryExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30B26C7124B0040A985 /* ShapeLibraryExample.swift */; };
+		CF2FE30E26C7145A0040A985 /* SketchyLineExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30D26C7145A0040A985 /* SketchyLineExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,13 @@
 		CF2FE2F426C7061C0040A985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF2FE2F726C7061C0040A985 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF2FE2F926C7061C0040A985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2FE30226C706870040A985 /* ShapeUp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ShapeUp; path = ../ShapeUp; sourceTree = "<group>"; };
+		CF2FE30326C706AD0040A985 /* ShapeUpLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeUpLogo.swift; sourceTree = "<group>"; };
+		CF2FE30526C706EE0040A985 /* CornerCutRectangleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerCutRectangleExample.swift; sourceTree = "<group>"; };
+		CF2FE30726C708D20040A985 /* CornerShapeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerShapeExample.swift; sourceTree = "<group>"; };
+		CF2FE30926C70DC30040A985 /* NotchedRectangleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchedRectangleExample.swift; sourceTree = "<group>"; };
+		CF2FE30B26C7124B0040A985 /* ShapeLibraryExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeLibraryExample.swift; sourceTree = "<group>"; };
+		CF2FE30D26C7145A0040A985 /* SketchyLineExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchyLineExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +51,7 @@
 		CF2FE2E426C7061A0040A985 = {
 			isa = PBXGroup;
 			children = (
+				CF2FE30226C706870040A985 /* ShapeUp */,
 				CF2FE2EF26C7061A0040A985 /* ShapeUpExample */,
 				CF2FE2EE26C7061A0040A985 /* Products */,
 			);
@@ -56,6 +70,12 @@
 			children = (
 				CF2FE2F026C7061A0040A985 /* ShapeUpExampleApp.swift */,
 				CF2FE2F226C7061A0040A985 /* ContentView.swift */,
+				CF2FE30326C706AD0040A985 /* ShapeUpLogo.swift */,
+				CF2FE30526C706EE0040A985 /* CornerCutRectangleExample.swift */,
+				CF2FE30726C708D20040A985 /* CornerShapeExample.swift */,
+				CF2FE30926C70DC30040A985 /* NotchedRectangleExample.swift */,
+				CF2FE30B26C7124B0040A985 /* ShapeLibraryExample.swift */,
+				CF2FE30D26C7145A0040A985 /* SketchyLineExample.swift */,
 				CF2FE2F426C7061C0040A985 /* Assets.xcassets */,
 				CF2FE2F926C7061C0040A985 /* Info.plist */,
 				CF2FE2F626C7061C0040A985 /* Preview Content */,
@@ -146,7 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2FE30C26C7124B0040A985 /* ShapeLibraryExample.swift in Sources */,
+				CF2FE30626C706EE0040A985 /* CornerCutRectangleExample.swift in Sources */,
+				CF2FE30E26C7145A0040A985 /* SketchyLineExample.swift in Sources */,
+				CF2FE30426C706AD0040A985 /* ShapeUpLogo.swift in Sources */,
 				CF2FE2F326C7061A0040A985 /* ContentView.swift in Sources */,
+				CF2FE30826C708D20040A985 /* CornerShapeExample.swift in Sources */,
+				CF2FE30A26C70DC30040A985 /* NotchedRectangleExample.swift in Sources */,
 				CF2FE2F126C7061A0040A985 /* ShapeUpExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

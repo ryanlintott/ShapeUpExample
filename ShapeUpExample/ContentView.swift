@@ -9,8 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView {
+            ShapeUpLogo()
+                .tabItem {
+                    Image(systemName: "chevron.up.square.fill")
+                    Text("Logo")
+                }
+            
+            CornerCutRectangleExample()
+                .tabItem {
+                    Image(systemName: "rectangle.roundedtop")
+                    Text("CornerCut")
+                }
+            
+            NotchedRectangleExample()
+                .tabItem {
+                    Image(systemName: "bookmark.fill")
+                    Text("Notched")
+                }
+            
+            ShapeLibraryExample()
+                .tabItem {
+                    Image(systemName: "hexagon.fill")
+                    Text("Library")
+                }
+        }
     }
 }
 
