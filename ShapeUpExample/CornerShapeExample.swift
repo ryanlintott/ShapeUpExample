@@ -54,10 +54,10 @@ struct CornerShapeExample: View {
                         Corner(.rounded(radius: .relative(0.1)),x: rect.midX, y: rect.maxY),
                         
                     ]
-                    .points
-                    .map({ $0.mirrored(mirrorLineStart: CGPoint(x: rect.minX, y: rect.minY - 10), mirrorLineEnd: CGPoint(x: rect.maxX, y: rect.midY + 10)) })
+//                    .points
+//                    .map({ $0.mirrored(mirrorLineStart: CGPoint(x: rect.minX, y: rect.minY - 10), mirrorLineEnd: CGPoint(x: rect.maxX, y: rect.midY + 10)) })
                     .reversed()
-                    .corners()
+//                    .corners()
                 }
 //                    .inset(by: 15)
                     .fill(Color.black.opacity(0.5))

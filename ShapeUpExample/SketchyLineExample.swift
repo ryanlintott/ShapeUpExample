@@ -17,7 +17,7 @@ struct SketchyLineExample: View {
                     .bottom(startExtension: .absolute(5), endExtension: .absolute(5), offset: .relative(0.1))
                 ], drawAmount: 1)
                 .stroke(Color.red)
-                , alignment: .lastTextBaseline()
+                , alignment: .bottom
             )
     }
 }
