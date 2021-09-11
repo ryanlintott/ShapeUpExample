@@ -10,7 +10,7 @@ import SwiftUI
 
 struct NotchedRectangleExample: View {
     var body: some View {
-        NotchedRectangle(
+        CSNotchedRectangle(
             top: .rectangle(depth: .absolute(50), cornerStyle: .rounded(radius: .absolute(10))),
             bottom: .triangle(position: .relative(0.6), length: .relative(0.4), depth: .relative(0.1)),
             left: .custom(depth: .absolute(60), corners: { rect in

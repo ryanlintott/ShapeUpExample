@@ -8,12 +8,12 @@
 import ShapeUp
 import SwiftUI
 
-struct ShapeUpLogo: InsettableCornerShape {
+struct ShapeUpLogo: CornerShape {
     var insetAmount: CGFloat = 0
     
     let arrowThickness: RelatableValue = .relative(0.35)
     
-    func path(in rect: CGRect) -> Path {
+    func corners(in rect: CGRect) -> [Corner] {
         let arrowThickness = arrowThickness.value(using: rect.width)
         let arrowSide: [Corner] = [
             Corner(.straight(radius: .relative(0.1)), x: rect.midX - arrowThickness * 0.5, y: rect.maxY),
@@ -25,8 +25,6 @@ struct ShapeUpLogo: InsettableCornerShape {
         
         return arrow
             .addingNotch(Notch(.triangle, depth: .relative(0.2)), afterCornerIndex: 6)
-            .inset(by: insetAmount)
-            .path()
     }
 }
 

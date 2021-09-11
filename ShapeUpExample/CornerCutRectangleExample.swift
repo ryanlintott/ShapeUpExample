@@ -21,11 +21,11 @@ struct CornerCutRectangleExample: View {
                 )
                 .frame(width: 100, height: 100)
             
-            CornerCutRectangle(.straight(radius: .absolute(20)))
+            CSRectangle(.straight(radius: .absolute(20)))
                 .stroke()
                 .frame(width: 100, height: 100)
             
-            CornerCutRectangle(.rounded(radius: .absolute(4)), corners: [.bottomLeft, .bottomRight])
+            CSRectangle(.rounded(radius: .absolute(4)), corners: [.bottomLeft, .bottomRight])
                 .stroke()
                 .frame(width: 100, height: 100)
         }

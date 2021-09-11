@@ -9,7 +9,7 @@ import ShapeUp
 import SwiftUI
 
 struct CornerShapeExample: View {
-    let shape = CornerShape { rect in
+    let shape = CSCustom { rect in
         [
             Corner(.rounded(radius: .relative(0.1)),x: rect.minX, y: rect.minY),
             Corner(.rounded(radius: .relative(0.1)), x: rect.midX, y: rect.midY),
@@ -45,7 +45,7 @@ struct CornerShapeExample: View {
         shape
             .fill(Color.blue)
             .overlay(
-                CornerShape { rect in
+                CSCustom { rect in
                     [
                         Corner(.rounded(radius: .relative(0.1)),x: rect.minX, y: rect.minY),
                         Corner(.rounded(radius: .relative(0.1)), x: rect.midX, y: rect.midY),
