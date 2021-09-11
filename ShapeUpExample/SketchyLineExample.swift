@@ -13,8 +13,8 @@ struct SketchyLineExample: View {
         Text("Hello World")
             .background(
                 SketchyLines(lines: [
-                    .leading(startExtension: .absolute(-2), endExtension: .absolute(10)),
-                    .bottom(startExtension: .absolute(5), endExtension: .absolute(5), offset: .relative(0.1))
+                    .leading(startExtension: -2, endExtension: 10),
+                    .bottom(startExtension: 5, endExtension: 5, offset: .relative(0.1))
                 ], drawAmount: 1)
                 .stroke(Color.red)
                 , alignment: .bottom

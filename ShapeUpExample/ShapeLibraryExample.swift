@@ -17,13 +17,13 @@ struct ShapeLibraryExample: View {
                 bottomTaper: .zero
             )
             .corners(in: rect)
-            .applyingStyle(.rounded(radius: .absolute(30)))
+            .applyingStyle(.rounded(radius: 30))
             .addingNotches([
                 .triangle(depth: .relative(0.2)),
                 nil,
                 nil,
                 .triangle(depth: .relative(0.2)),
-                .rectangle(length: .absolute(50), depth: .absolute(20), cornerStyle: .rounded(radius: .relative(0.4)))
+                .rectangle(length: 50, depth: 20, cornerStyle: .rounded(radius: .relative(0.4)))
             ])
         }
         .padding()

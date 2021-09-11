@@ -14,18 +14,18 @@ struct CornerCutRectangleExample: View {
             Rectangle()
                 .fill(Color.blue)
                 .cutCorners(
-                    topLeft: .straight(radius: .absolute(60)),
+                    topLeft: .straight(radius: 60),
                     topRight: .cutout(radius: .relative(0.2)),
                     bottomLeft: .concave(radius: .relative(0.2)),
                     bottomRight: .rounded(radius: .relative(0.8))
                 )
                 .frame(width: 100, height: 100)
             
-            CSRectangle(.straight(radius: .absolute(20)))
+            CSRectangle(.straight(radius: 20))
                 .stroke()
                 .frame(width: 100, height: 100)
             
-            CSRectangle(.rounded(radius: .absolute(4)), corners: [.bottomLeft, .bottomRight])
+            CSRectangle(.rounded(radius: 4), corners: [.bottomLeft, .bottomRight])
                 .stroke()
                 .frame(width: 100, height: 100)
         }
