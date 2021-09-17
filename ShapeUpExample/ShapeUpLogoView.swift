@@ -37,6 +37,7 @@ struct ShapeUpLogoView: View {
             
             Text("ShapeUp")
         }
+        .navigationTitle("Logo")
     }
 }
 

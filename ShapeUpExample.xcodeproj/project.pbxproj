@@ -18,6 +18,7 @@
 		CF2FE30A26C70DC30040A985 /* NotchedRectangleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30926C70DC30040A985 /* NotchedRectangleExample.swift */; };
 		CF2FE30C26C7124B0040A985 /* ShapeLibraryExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30B26C7124B0040A985 /* ShapeLibraryExample.swift */; };
 		CF2FE30E26C7145A0040A985 /* SketchyLineExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30D26C7145A0040A985 /* SketchyLineExample.swift */; };
+		CFD6965F26F431D4008D58AD /* EmbossExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6965E26F431D4008D58AD /* EmbossExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		CF2FE30926C70DC30040A985 /* NotchedRectangleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchedRectangleExample.swift; sourceTree = "<group>"; };
 		CF2FE30B26C7124B0040A985 /* ShapeLibraryExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeLibraryExample.swift; sourceTree = "<group>"; };
 		CF2FE30D26C7145A0040A985 /* SketchyLineExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchyLineExample.swift; sourceTree = "<group>"; };
+		CFD6965E26F431D4008D58AD /* EmbossExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbossExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				CF2FE30726C708D20040A985 /* CornerShapeExample.swift */,
 				CF2FE30926C70DC30040A985 /* NotchedRectangleExample.swift */,
 				CF2FE30B26C7124B0040A985 /* ShapeLibraryExample.swift */,
+				CFD6965E26F431D4008D58AD /* EmbossExample.swift */,
 				CF2FE30D26C7145A0040A985 /* SketchyLineExample.swift */,
 				CF2FE2F426C7061C0040A985 /* Assets.xcassets */,
 				CF2FE2F926C7061C0040A985 /* Info.plist */,
@@ -174,6 +177,7 @@
 				CF2FE30826C708D20040A985 /* CornerShapeExample.swift in Sources */,
 				CF2FE30A26C70DC30040A985 /* NotchedRectangleExample.swift in Sources */,
 				CF2FE2F126C7061A0040A985 /* ShapeUpExampleApp.swift in Sources */,
+				CFD6965F26F431D4008D58AD /* EmbossExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -38,6 +38,7 @@ struct CornerShapeExample: View {
                     .fill(Color.black.opacity(0.5))
             )
             .frame(width: 300, height: 300)
+            .navigationTitle("CSCustom")
     }
 }
 

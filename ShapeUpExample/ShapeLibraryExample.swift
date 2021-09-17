@@ -27,6 +27,7 @@ struct ShapeLibraryExample: View {
             ])
         }
         .padding()
+        .navigationTitle("CSPentagon")
     }
 }
 

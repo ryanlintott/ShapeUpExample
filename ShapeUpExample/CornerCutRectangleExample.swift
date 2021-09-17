@@ -29,6 +29,7 @@ struct CornerCutRectangleExample: View {
                 .stroke()
                 .frame(width: 100, height: 100)
         }
+        .navigationTitle("CSRectangle")
     }
 }
 

@@ -9,30 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
-            ShapeUpLogoView()
-                .tabItem {
-                    Image(systemName: "chevron.up.square.fill")
-                    Text("Logo")
+        NavigationView {
+            Form {
+                NavigationLink(destination: ShapeUpLogoView()) {
+                    Label("Logo", systemImage: "chevron.up.square.fill")
                 }
-            
-            CornerCutRectangleExample()
-                .tabItem {
-                    Image(systemName: "rectangle.roundedtop")
-                    Text("CornerCut")
+                
+                NavigationLink(destination: CornerCutRectangleExample()) {
+                    Label("CornerCut", systemImage: "rectangle.roundedtop")
                 }
-            
-            NotchedRectangleExample()
-                .tabItem {
-                    Image(systemName: "bookmark.fill")
-                    Text("Notched")
+                
+                NavigationLink(destination: NotchedRectangleExample()) {
+                    Label("Notched", systemImage: "bookmark.fill")
                 }
-            
-            ShapeLibraryExample()
-                .tabItem {
-                    Image(systemName: "hexagon.fill")
-                    Text("Library")
+                
+                NavigationLink(destination: ShapeLibraryExample()) {
+                    Label("Library", systemImage: "hexagon.fill")
                 }
+                
+                NavigationLink(destination: EmbossExample()) {
+                    Label("Emboss", systemImage: "rectangle.dashed")
+                }
+                
+                NavigationLink(destination: SketchyLineExample()) {
+                    Label("SketchyLine", systemImage: "highlighter")
+                }
+            }
+            .navigationTitle("ShapeUp")
         }
     }
 }

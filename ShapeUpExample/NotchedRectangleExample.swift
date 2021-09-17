@@ -32,6 +32,7 @@ struct NotchedRectangleExample: View {
         .strokeBorder(style: StrokeStyle(lineWidth: 20))
 //            .fill(Color.blue)
             .frame(width: 300, height: 300)
+            .navigationTitle("Notched")
     }
 }
 
