@@ -10,33 +10,43 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            Form {
-                NavigationLink(destination: ShapeUpLogoView()) {
-                    Label("Logo", systemImage: "chevron.up.square.fill")
-                }
+            VStack {
+                Image("ShapeUp-logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(maxWidth: 400)
+                    .padding()
                 
-                NavigationLink(destination: CornerCutRectangleExample()) {
-                    Label("CornerCut", systemImage: "rectangle.roundedtop")
-                }
-                
-                NavigationLink(destination: NotchedRectangleExample()) {
-                    Label("Notched", systemImage: "bookmark.fill")
-                }
-                
-                NavigationLink(destination: ShapeLibraryExample()) {
-                    Label("Library", systemImage: "hexagon.fill")
-                }
-                
-                NavigationLink(destination: EmbossExample()) {
-                    Label("Emboss", systemImage: "rectangle.dashed")
-                }
-                
-                NavigationLink(destination: SketchyLineExample()) {
-                    Label("SketchyLine", systemImage: "highlighter")
+                Form {
+                    NavigationLink(destination: ShapeUpLogoView()) {
+                        Label("Logo", systemImage: "chevron.up.square.fill")
+                    }
+                    
+                    NavigationLink(destination: CornerCutRectangleExample()) {
+                        Label("CornerCut", systemImage: "rectangle.roundedtop")
+                    }
+                    
+                    NavigationLink(destination: NotchedRectangleExample()) {
+                        Label("Notched", systemImage: "bookmark.fill")
+                    }
+                    
+                    NavigationLink(destination: ShapeLibraryExample()) {
+                        Label("Library", systemImage: "hexagon.fill")
+                    }
+                    
+                    NavigationLink(destination: EmbossExample()) {
+                        Label("Emboss", systemImage: "rectangle.dashed")
+                    }
+                    
+                    NavigationLink(destination: SketchyLineExample()) {
+                        Label("SketchyLine", systemImage: "highlighter")
+                    }
                 }
             }
             .navigationTitle("ShapeUp")
+            .navigationBarHidden(true)
         }
+        .navigationViewStyle(.stack)
     }
 }
 
