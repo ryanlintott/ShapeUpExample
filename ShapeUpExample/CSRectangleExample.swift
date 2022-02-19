@@ -1,5 +1,5 @@
 //
-//  CornerCutRectangleView.swift
+//  CSRectangleExample.swift
 //  ShapeUpExample
 //
 //  Created by Ryan Lintott on 2021-08-13.
@@ -8,17 +8,16 @@
 import ShapeUp
 import SwiftUI
 
-struct CornerCutRectangleExample: View {
+struct CSRectangleExample: View {
     var body: some View {
         VStack {
-            Rectangle()
+            CSRectangle(
+                topLeft: .straight(radius: 60),
+                topRight: .cutout(radius: .relative(0.2)),
+                bottomLeft: .concave(radius: .relative(0.2)),
+                bottomRight: .rounded(radius: .relative(0.8))
+            )
                 .fill(Color.blue)
-                .cutCorners(
-                    topLeft: .straight(radius: 60),
-                    topRight: .cutout(radius: .relative(0.2)),
-                    bottomLeft: .concave(radius: .relative(0.2)),
-                    bottomRight: .rounded(radius: .relative(0.8))
-                )
                 .frame(width: 100, height: 100)
             
             CSRectangle(.straight(radius: 20))
@@ -33,8 +32,8 @@ struct CornerCutRectangleExample: View {
     }
 }
 
-struct CornerCutRectangleView_Previews: PreviewProvider {
+struct CSRectangleExample_Previews: PreviewProvider {
     static var previews: some View {
-        CornerCutRectangleExample()
+        CSRectangleExample()
     }
 }

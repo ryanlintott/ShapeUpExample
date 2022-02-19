@@ -22,7 +22,15 @@ struct ContentView: View {
                         Label("Logo", systemImage: "chevron.up.square.fill")
                     }
                     
-                    NavigationLink(destination: CornerCutRectangleExample()) {
+                    NavigationLink(destination: AddOpenCornerShapeExample()) {
+                        Label("AddOpenCornerShape", systemImage: "rectangle.roundedtop")
+                    }
+                    
+                    NavigationLink(destination: InsetCornerShapeExample()) {
+                        Label("InsetCornerShape", systemImage: "rectangle.roundedtop")
+                    }
+                    
+                    NavigationLink(destination: CSRectangleExample()) {
                         Label("CornerCut", systemImage: "rectangle.roundedtop")
                     }
                     

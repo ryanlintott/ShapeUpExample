@@ -21,7 +21,7 @@ struct ShapeUpLogo: CornerShape {
             Corner(.rounded(radius: .relative(0.4)), x: rect.minX, y: rect.midY)
         ]
         let arrowPoint = Corner(.rounded(radius: .relative(0.1)), x: rect.midX, y: rect.minY)
-        let arrow = arrowSide + [arrowPoint] + arrowSide.flipHorizontal(around: rect.midX).reversed()
+        let arrow = arrowSide + [arrowPoint] + arrowSide.flippedHorizontally(across: rect.midX).reversed()
         
         return arrow
             .addingNotch(Notch(.triangle, depth: .relative(0.2)), afterCornerIndex: 6)
