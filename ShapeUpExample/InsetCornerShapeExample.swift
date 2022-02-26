@@ -8,25 +8,40 @@
 import ShapeUp
 import SwiftUI
 
-struct InsetCornerShape: Shape {
-    func path(in rect: CGRect) -> Path {
+struct InsetCornerShape: CornerShape {
+    var insetAmount: CGFloat = 0
+    
+    func corners(in rect: CGRect) -> [Corner] {
         [
             Corner(x: rect.minX, y: rect.minY),
             Corner(x: rect.midX, y: rect.midY),
             Corner(x: rect.maxX, y: rect.minY),
-            Corner(x: rect.maxX, y: rect.maxY),
+            Corner(x: rect.maxX, y: rect.midY),
+            Corner(x: rect.midX, y: rect.maxY),
             Corner(x: rect.minX, y: rect.maxY)
         ]
-            .applyingStyle(.rounded(radius: .relative(0.2)))
-            .inset(by: 10)
-            .path()
+            .applyingStyle(.concave(radius: 20))
     }
 }
 
 struct InsetCornerShapeExample: View {
     var body: some View {
-        InsetCornerShape()
-            .stroke(.blue, lineWidth: 2)
+        ZStack {
+            InsetCornerShape()
+                .stroke()
+            
+            InsetCornerShape()
+                .inset(by: 4)
+                .stroke(.blue)
+            
+            InsetCornerShape()
+                .inset(by: -4)
+                .stroke(.red)
+            
+            // Rounded rectangles have the same stroke border issue
+//            RoundedRectangle(cornerRadius: 20)
+//                .strokeBorder(lineWidth:40)
+        }
             .frame(width: 200, height: 200)
             .navigationTitle("InsetCornerShape")
     }
@@ -34,6 +49,8 @@ struct InsetCornerShapeExample: View {
 
 struct InsetCornerShapeExample_Previews: PreviewProvider {
     static var previews: some View {
-        InsetCornerShapeExample()
+        NavigationView {
+            InsetCornerShapeExample()
+        }
     }
 }
