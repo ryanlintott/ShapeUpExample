@@ -16,11 +16,13 @@ struct InsetCornerShape: CornerShape {
             Corner(x: rect.minX, y: rect.minY),
             Corner(x: rect.midX, y: rect.midY),
             Corner(x: rect.maxX, y: rect.minY),
-            Corner(x: rect.maxX, y: rect.midY),
-            Corner(x: rect.midX, y: rect.maxY),
+//            Corner(x: rect.maxX, y: rect.midY),
+//            Corner(x: rect.midX, y: rect.maxY),
+            Corner(x: rect.maxX, y: rect.maxY),
             Corner(x: rect.minX, y: rect.maxY)
         ]
-            .applyingStyle(.concave(radius: 20))
+//            .rotated(.degrees(90), anchor: .center)
+            .applyingStyle(.concave(radius: 10, radiusOffset: 0))
     }
 }
 
@@ -31,11 +33,11 @@ struct InsetCornerShapeExample: View {
                 .stroke()
             
             InsetCornerShape()
-                .inset(by: 4)
+                .inset(by: 20)
                 .stroke(.blue)
-            
+
             InsetCornerShape()
-                .inset(by: -4)
+                .inset(by: -15)
                 .stroke(.red)
             
             // Rounded rectangles have the same stroke border issue
