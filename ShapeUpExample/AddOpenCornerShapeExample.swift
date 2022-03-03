@@ -21,7 +21,7 @@ struct OpenCornerShape: Shape {
         ]
             .applyingStyles([
                 .straight(radius: .relative(0.1)),
-                .straight(radius: .relative(0.2), cornerStyles: [.rounded(radius: .relative(0.5))]),
+                .straight(radius: .relative(0.2), cornerStyles: [.rounded(radius: 3)]),
                 .cutout(radius: .relative(0.2), cornerStyles: [.rounded(radius: .relative(0.2))]),
                 .cutout(radius: .relative(0.2), cornerStyles: [.rounded(radius: .relative(0.2))]),
                 .rounded(radius: 20)

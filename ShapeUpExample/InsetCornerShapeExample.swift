@@ -19,7 +19,7 @@ struct InsetCornerShape: CornerShape {
             Corner(x: rect.maxX, y: rect.maxY),
             Corner(x: rect.minX, y: rect.maxY)
         ]
-            .applyingStyle(.concave(radius: 10))
+            .applyingStyle(.concave(radius: 25))
     }
 }
 
@@ -27,19 +27,7 @@ struct InsetCornerShapeExample: View {
     var body: some View {
         ZStack {
             InsetCornerShape()
-                .stroke()
-            
-            InsetCornerShape()
-                .inset(by: 10)
-                .stroke(.blue)
-
-            InsetCornerShape()
-                .inset(by: -10)
-                .stroke(.red)
-            
-            // Rounded rectangles have the same stroke border issue
-//            RoundedRectangle(cornerRadius: 20)
-//                .strokeBorder(lineWidth:40)
+                .strokeBorder(.blue, lineWidth: 15)
         }
             .frame(width: 200, height: 200)
             .navigationTitle("InsetCornerShape")
