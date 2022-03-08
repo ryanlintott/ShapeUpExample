@@ -12,7 +12,7 @@ struct NotchedRectangleExample: View {
     let notch = NotchStyle.triangle()
     
     var body: some View {
-        CSCustom { rect in
+        CornerCustom { rect in
             rect
                 .corners([
                     .rounded(radius: 20),

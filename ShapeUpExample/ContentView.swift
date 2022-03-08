@@ -19,7 +19,7 @@ struct ContentView: View {
                 
                 Form {
                     NavigationLink(destination: ShapeUpLogoView()) {
-                        Label("Logo", systemImage: "chevron.up.square.fill")
+                        Label("ShapeUp Logo", systemImage: "chevron.up.square")
                     }
                     
                     NavigationLink(destination: AddOpenCornerShapeExample()) {
@@ -30,7 +30,7 @@ struct ContentView: View {
                         Label("InsetCornerShape", systemImage: "rectangle.roundedtop")
                     }
                     
-                    NavigationLink(destination: CSRectangleExample()) {
+                    NavigationLink(destination: CornerRectangleExample()) {
                         Label("CornerCut", systemImage: "rectangle.roundedtop")
                     }
                     
@@ -55,6 +55,7 @@ struct ContentView: View {
             .navigationBarHidden(true)
         }
         .navigationViewStyle(.stack)
+        .accentColor(.suPink)
     }
 }
 

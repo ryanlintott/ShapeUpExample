@@ -10,8 +10,8 @@ import SwiftUI
 
 struct ShapeLibraryExample: View {
     var body: some View {
-        CSCustom { rect in
-            CSPentagon(
+        CornerCustom { rect in
+            CornerPentagon(
                 pointHeight: .relative(0.2),
                 topTaper: .relative(0.15),
                 bottomTaper: .zero
@@ -27,7 +27,7 @@ struct ShapeLibraryExample: View {
             ])
         }
         .padding()
-        .navigationTitle("CSPentagon")
+        .navigationTitle("CornerPentagon")
     }
 }
 

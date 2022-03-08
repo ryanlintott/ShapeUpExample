@@ -9,6 +9,7 @@ import ShapeUp
 import SwiftUI
 
 struct InsetCornerShape: CornerShape {
+    var closed = true
     var insetAmount: CGFloat = 0
     
     func corners(in rect: CGRect) -> [Corner] {
