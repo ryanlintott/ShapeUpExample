@@ -24,6 +24,10 @@ struct ContentView: View {
                             Label("ShapeUp Logo", systemImage: "arrowtriangle.up")
                         }
                         
+                        NavigationLink(destination: BasicCompareExample()) {
+                            Label("Basic Comparison", systemImage: "rectangle.grid.1x2")
+                        }
+                        
                         NavigationLink(destination: CornerStyleExample()) {
                             Label("CornerStyle", systemImage: "arrow.up.forward.app")
                         }

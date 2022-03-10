@@ -20,7 +20,7 @@ struct SketchyLineExample: View {
                     .leading(startExtension: -2, endExtension: 10),
                     .bottom(startExtension: 5, endExtension: 5, offset: .relative(0.05))
                 ], drawAmount: 1)
-                .stroke(Color.red)
+                    .stroke(Color.suPink)
                 , alignment: .bottom
             )
             .navigationTitle("SketchyLine")

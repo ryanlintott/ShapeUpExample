@@ -31,8 +31,8 @@ struct EmbossExample: View {
                 .foregroundColor(.blue)
                 .emboss(amount: 1, angle: angle + .degrees(180), opacity: 0.8)
                 
-            CornerPentagon(pointHeight: 4, topTaper: .relative(0.5), bottomTaper: .relative(0.2))
-                .embossEdges(size: size, angle: angle + .degrees(180), opacity: opacity)
+            CornerPentagon(pointHeight: 20, topTaper: .relative(0.5), bottomTaper: .relative(0.2))
+                .embossEdges(size: size, angle: angle, opacity: opacity)
         }
         .padding(50)
         .background(Color.gray)

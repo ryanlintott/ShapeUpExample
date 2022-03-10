@@ -11,38 +11,24 @@ import SwiftUI
 struct CornerStyleExample: View {
     let styles: [CornerStyle] = [
         .point,
-        .rounded(radius: 15),
-        .concave(radius: 15),
-        .straight(radius: 15),
-        .cutout(radius: 15)
+        .rounded(radius: 25),
+        .concave(radius: 25),
+        .straight(radius: 25),
+        .cutout(radius: 25)
     ]
     
     var body: some View {
         VStack {
             ForEach(styles, id: \.self) { style in
                 ZStack {
-                    Rectangle()
-                        .applyingStyle(style)
-                        .inset(by: -5)
-                        .fill(Color.suPurple)
-                    
-                    Rectangle()
-                        .applyingStyle(style)
-                        .fill(Color.suCyan)
-                    
-                    Rectangle()
-                        .applyingStyle(style)
-                        .inset(by: 10)
-                        .fill(Color.suYellow)
-                    
-                    Rectangle()
-                        .applyingStyle(style)
-                        .inset(by: 15)
-                        .strokeBorder(Color.suPink, lineWidth: 5)
+                    CornerTriangle()
+                        .applyingStyles([.top: style])
+                        .fill(Color.suPink)
                     
                     Text(style.name)
                 }
                 .padding(5)
+                .padding(.horizontal, 50)
             }
         }
         .padding()
