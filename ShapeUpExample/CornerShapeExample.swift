@@ -8,46 +8,54 @@
 import ShapeUp
 import SwiftUI
 
-struct TestShape: CornerShape {
+struct TestClosedShape: CornerShape {
     var closed = true
     var insetAmount: CGFloat = 0
     
     func corners(in rect: CGRect) -> [Corner] {
         [
-            Corner(.rounded(radius: .relative(0.1)),x: rect.minX, y: rect.minY),
-            Corner(.rounded(radius: .relative(0.1)), x: rect.midX, y: rect.midY),
-            Corner(.rounded(radius: 20),x: rect.maxX, y: rect.minY),
-            Corner(.rounded(radius: .relative(0.3)),x: rect.maxX, y: rect.maxY),
-            Corner(.rounded(radius: .relative(0.1)),x: rect.midX, y: rect.maxY),
-        ].applyingStyle(.straight(radius: 20))
+            Corner(.rounded(radius: .relative(0.3)),x: rect.minX, y: rect.minY),
+            Corner(.straight(radius: .relative(0.1)), x: rect.midX, y: rect.midY),
+            Corner(.cutout(radius: 20),x: rect.maxX, y: rect.minY),
+            Corner(.concave(radius: .relative(0.3)),x: rect.maxX, y: rect.maxY),
+            Corner(x: rect.midX, y: rect.maxY),
+        ]
+    }
+}
+
+struct TestOpenShape: CornerShape {
+    var closed = false
+    var insetAmount: CGFloat = 0
+    
+    func corners(in rect: CGRect) -> [Corner] {
+        rect.points(.bottomLeft, .left, .bottom, .top, .right, .topRight)
+            .corners([
+                nil,
+                .rounded(radius: .relative(0.4)),
+                .concave(radius: .relative(0.3)),
+                .straight(radius: .relative(0.3)),
+                .cutout(radius: .relative(0.1)),
+                nil
+            ])
     }
 }
 
 struct CornerShapeExample: View {
     var body: some View {
-        TestShape()
-            .fill(Color.blue)
-//            .overlay(
-//                CornerCustom { rect in
-//                    [
-//                        Corner(.rounded(radius: .relative(0.1)),x: rect.minX, y: rect.minY),
-//                        Corner(.rounded(radius: .relative(0.2)), x: rect.midX, y: rect.midY),
-//                        Corner(.rounded(radius: 20),x: rect.maxX, y: rect.minY),
-//                        Corner(.rounded(radius: .relative(0.3)),x: rect.maxX, y: rect.maxY),
-//                        Corner(.rounded(radius: .relative(0.1)),x: rect.midX, y: rect.maxY),
-//                    ]
-//                    .flipped(
-//                        mirrorLineStart: CGPoint(x: rect.minX, y: rect.minY - 10),
-//                        mirrorLineEnd: CGPoint(x: rect.maxX, y: rect.midY + 10)
-//                    )
-//                    .reversed()
-//                }
-////                    .inset(by: 15)
-//                    .fill(Color.black.opacity(0.5))
-//            )
-            .frame(width: 300, height: 300)
-            .background(Color.gray.opacity(0.3))
-            .navigationTitle("CornerCustom")
+        VStack {
+            TestClosedShape()
+                .fill(Color.suPink)
+                .frame(width: 200, height: 150)
+            
+            Text("Closed Shape")
+            
+            TestOpenShape()
+                .stroke(Color.suYellow, lineWidth: 12)
+                .frame(width: 200, height: 150)
+            
+            Text("Open Shape")
+        }
+        .navigationTitle("CornerShape")
     }
 }
 

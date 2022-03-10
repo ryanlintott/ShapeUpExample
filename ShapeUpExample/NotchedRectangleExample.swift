@@ -9,8 +9,6 @@ import ShapeUp
 import SwiftUI
 
 struct NotchedRectangleExample: View {
-    let notch = NotchStyle.triangle()
-    
     var body: some View {
         CornerCustom { rect in
             rect
@@ -25,7 +23,7 @@ struct NotchedRectangleExample: View {
                         .rectangle(depth: 50, cornerStyle: .rounded(radius: 10)),
                         nil,
                         .triangle(position: .relative(0.5), length: .relative(0.2), depth: .relative(0.1)),
-                        .custom(depth: 60) { rect in
+                        .custom(depth: 60) { rect in                            
                             [
                                 Corner(x: rect.midX, y: rect.minY),
                                 Corner(x: rect.minX, y: rect.maxY),
@@ -38,7 +36,7 @@ struct NotchedRectangleExample: View {
         }
         .strokeBorder(style: StrokeStyle(lineWidth: 20))
         .frame(width: 300, height: 300)
-        .navigationTitle("Notched")
+        .navigationTitle("NotchedRectangle")
     }
 }
 

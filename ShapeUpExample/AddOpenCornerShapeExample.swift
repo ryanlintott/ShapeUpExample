@@ -10,24 +10,35 @@ import SwiftUI
 
 struct OpenCornerShape: Shape {
     func path(in rect: CGRect) -> Path {
-        var path = Path()
-        
         let corners = [
             Corner(x: rect.minX, y: rect.minY),
             Corner(x: rect.midX, y: rect.midY),
             Corner(x: rect.maxX, y: rect.minY),
-            Corner(x: rect.maxX, y: rect.maxY),
-            Corner(x: rect.minX, y: rect.maxY)
+            Corner(x: rect.maxX, y: rect.midY)
         ]
-            .applyingStyles([
-                .straight(radius: .relative(0.1)),
-                .straight(radius: .relative(0.2), cornerStyles: [.rounded(radius: 3)]),
-                .cutout(radius: .relative(0.2), cornerStyles: [.rounded(radius: .relative(0.2))]),
+            .corners([
+                .straight(radius: .relative(0.2)),
+                .cutout(radius: .relative(0.2), cornerStyles: [
+                    .rounded(radius: .relative(0.4)),
+                    .point,
+                    .straight(radius: .relative(0.4))
+                ]),
                 .cutout(radius: .relative(0.2), cornerStyles: [.rounded(radius: .relative(0.2))]),
                 .rounded(radius: 20)
             ])
-
-        path.addOpenCornerShape(corners)
+        
+        var path = Path()
+        path.move(to: CGPoint(x: rect.minX + rect.width * 0.25, y: rect.maxY))
+        path.addQuadCurve(to: CGPoint(x: rect.minX, y: rect.midY), control: CGPoint(x: rect.midX, y: rect.midY))
+        
+        path.addOpenCornerShape(
+            corners,
+            previousPoint: CGPoint(x: rect.minX, y: rect.midY),
+            nextPoint: CGPoint(x: rect.midX, y: rect.midY),
+            moveToStart: false
+        )
+        
+        path.addQuadCurve(to: CGPoint(x: rect.maxX - rect.width * 0.25, y: rect.maxY), control: CGPoint(x: rect.midX, y: rect.midY))
 
         return path
     }
@@ -41,7 +52,7 @@ struct AddOpenCornerShapeExample: View {
                 .frame(width: 200, height: 200)
                 .navigationTitle("AddOpenCornerShape")
             
-            Text("An open ")
+            Text("Regular SwiftUI Path with some Corners")
         }
     }
 }

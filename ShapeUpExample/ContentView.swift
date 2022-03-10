@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
+            
             VStack {
                 Image("ShapeUp-logo")
                     .resizable()
@@ -17,37 +18,53 @@ struct ContentView: View {
                     .frame(maxWidth: 400)
                     .padding()
                 
-                Form {
-                    NavigationLink(destination: ShapeUpLogoView()) {
-                        Label("ShapeUp Logo", systemImage: "chevron.up.square")
+                List {
+                    Group {
+                        NavigationLink(destination: ShapeUpLogoView()) {
+                            Label("ShapeUp Logo", systemImage: "arrowtriangle.up")
+                        }
+                        
+                        NavigationLink(destination: CornerStyleExample()) {
+                            Label("CornerStyle", systemImage: "arrow.up.forward.app")
+                        }
+                        
+                        NavigationLink(destination: CornerShapeExample()) {
+                            Label("CornerShape", systemImage: "square.and.pencil")
+                        }
+                        
+                        NavigationLink(destination: CornerCustomExample()) {
+                            Label("CornerCustom", systemImage: "skew")
+                        }
                     }
                     
-                    NavigationLink(destination: AddOpenCornerShapeExample()) {
-                        Label("AddOpenCornerShape", systemImage: "rectangle.roundedtop")
+                    NavigationLink(destination: ShapesExample()) {
+                        Label("Shapes", systemImage: "pentagon")
+                    }
+                    
+                    NavigationLink(destination: NestedCornerStyleExample()) {
+                        Label("Nested CornerStyle", systemImage: "seal")
+                    }
+                    
+                    NavigationLink(destination: NotchedExample()) {
+                        Label("Notched", systemImage: "bookmark")
                     }
                     
                     NavigationLink(destination: InsetCornerShapeExample()) {
-                        Label("InsetCornerShape", systemImage: "rectangle.roundedtop")
+                        Label("InsetCornerShape", systemImage: "rectangle.inset.filled")
                     }
                     
-                    NavigationLink(destination: CornerRectangleExample()) {
-                        Label("CornerCut", systemImage: "rectangle.roundedtop")
+                    NavigationLink(destination: AddOpenCornerShapeExample()) {
+                        Label("AddOpenCornerShape", systemImage: "scribble")
                     }
                     
-                    NavigationLink(destination: NotchedRectangleExample()) {
-                        Label("Notched", systemImage: "bookmark.fill")
-                    }
-                    
-                    NavigationLink(destination: ShapeLibraryExample()) {
-                        Label("Library", systemImage: "hexagon.fill")
-                    }
-                    
-                    NavigationLink(destination: EmbossExample()) {
-                        Label("Emboss", systemImage: "rectangle.dashed")
-                    }
-                    
-                    NavigationLink(destination: SketchyLineExample()) {
-                        Label("SketchyLine", systemImage: "highlighter")
+                    Group {
+                        NavigationLink(destination: SketchyLineExample()) {
+                            Label("SketchyLine", systemImage: "highlighter")
+                        }
+                        
+                        NavigationLink(destination: EmbossExample()) {
+                            Label("Emboss", systemImage: "rectangle.dashed")
+                        }
                     }
                 }
             }

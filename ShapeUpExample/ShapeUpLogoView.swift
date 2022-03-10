@@ -15,10 +15,10 @@ struct ShapeUpLogo: View {
                 // Pink Logo
                 CornerCustom { rect in
                     [
-                        rect.anchorPoint(.topLeft),
-                        rect.anchorPoint(.topRight).moved(dx: rect.width * -0.075, dy: rect.height * 0.04),
-                        rect.anchorPoint(.topRight).moved(dx: rect.width * -0.075, dy: rect.height * 0.3),
-                        rect.anchorPoint(.bottomLeft).moved(dx: rect.width * 0.005, dy: rect.height * -0.08)
+                        rect.point(.topLeft),
+                        rect.point(.topRight).moved(dx: rect.width * -0.075, dy: rect.height * 0.04),
+                        rect.point(.topRight).moved(dx: rect.width * -0.075, dy: rect.height * 0.3),
+                        rect.point(.bottomLeft).moved(dx: rect.width * 0.005, dy: rect.height * -0.08)
                     ]
                         .rotated(.degrees(9))
                         .moved(dx: rect.width * 0.06, dy: rect.height * 0.02)
@@ -35,10 +35,10 @@ struct ShapeUpLogo: View {
                 // Purple Logo
                 CornerCustom { rect in
                     [
-                        rect.anchorPoint(.topLeft),
-                        rect.anchorPoint(.topLeft).moved(dx: rect.width * 0.271),
-                        rect.anchorPoint(.bottomLeft).moved(dx: rect.width * 0.271, dy: rect.height * -0.15),
-                        rect.anchorPoint(.bottomLeft).moved(dy: rect.height * -0.15)
+                        rect.point(.topLeft),
+                        rect.point(.topLeft).moved(dx: rect.width * 0.271),
+                        rect.point(.bottomLeft).moved(dx: rect.width * 0.271, dy: rect.height * -0.15),
+                        rect.point(.bottomLeft).moved(dy: rect.height * -0.15)
                     ]
                         .rotated(.degrees(-5))
                         .moved(dx: rect.width * 0.63, dy: rect.height * 0.11)

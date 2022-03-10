@@ -11,21 +11,23 @@ import SwiftUI
 struct CornerRectangleExample: View {
     var body: some View {
         VStack {
-            CornerRectangle(
-                topLeft: .straight(radius: 60),
-                topRight: .cutout(radius: .relative(0.2)),
-                bottomRight: .rounded(radius: .relative(0.8)),
-                bottomLeft: .concave(radius: .relative(0.2))
-            )
-                .fill(Color.blue)
-                .frame(width: 100, height: 100)
+            CornerRectangle([
+                .topLeft: .straight(radius: 60),
+                .topRight: .cutout(radius: .relative(0.2)),
+                .bottomRight: .rounded(radius: .relative(0.6)),
+                .bottomLeft: .concave(radius: .relative(0.2))
+            ])
+                .fill(Color.suCyan)
+                .frame(width: 200, height: 100)
             
-            CornerRectangle(.straight(radius: 20))
-                .stroke()
-                .frame(width: 100, height: 100)
+            CornerRectangle()
+                .applyingStyle(.straight(radius: 20))
+                .strokeBorder(Color.suPink, lineWidth: 8)
+                .frame(width: 200, height: 100)
             
-            CornerRectangle(.rounded(radius: 4), corners: [.bottomLeft, .bottomRight])
-                .stroke()
+            CornerRectangle()
+                .applyingStyle(.rounded(radius: 30), shapeCorners: [.bottomLeft, .bottomRight])
+                .fill(Color.suYellow)
                 .frame(width: 100, height: 100)
         }
         .navigationTitle("CornerRectangle")

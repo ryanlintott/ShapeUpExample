@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF03C89E27D94E7C008B415E /* CornerTriangleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03C89D27D94E7C008B415E /* CornerTriangleExample.swift */; };
+		CF03C8A027D9506E008B415E /* CornerPentagonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03C89F27D9506E008B415E /* CornerPentagonExample.swift */; };
+		CF03C8A227D955E4008B415E /* NotchedPentagonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03C8A127D955E4008B415E /* NotchedPentagonExample.swift */; };
+		CF03C8A427D956AA008B415E /* NotchedExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03C8A327D956AA008B415E /* NotchedExample.swift */; };
+		CF03C8A627D95748008B415E /* NotchedTriangleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03C8A527D95748008B415E /* NotchedTriangleExample.swift */; };
+		CF03C8A827D957EB008B415E /* NestedCornerStyleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03C8A727D957EB008B415E /* NestedCornerStyleExample.swift */; };
 		CF0FB7F227D7DD6E00B9C775 /* Color+brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB7F127D7DD6E00B9C775 /* Color+brand.swift */; };
 		CF2FE2F126C7061A0040A985 /* ShapeUpExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE2F026C7061A0040A985 /* ShapeUpExampleApp.swift */; };
 		CF2FE2F326C7061A0040A985 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE2F226C7061A0040A985 /* ContentView.swift */; };
@@ -17,14 +23,22 @@
 		CF2FE30626C706EE0040A985 /* CornerRectangleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30526C706EE0040A985 /* CornerRectangleExample.swift */; };
 		CF2FE30826C708D20040A985 /* CornerShapeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30726C708D20040A985 /* CornerShapeExample.swift */; };
 		CF2FE30A26C70DC30040A985 /* NotchedRectangleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30926C70DC30040A985 /* NotchedRectangleExample.swift */; };
-		CF2FE30C26C7124B0040A985 /* ShapeLibraryExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30B26C7124B0040A985 /* ShapeLibraryExample.swift */; };
+		CF2FE30C26C7124B0040A985 /* ShapesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30B26C7124B0040A985 /* ShapesExample.swift */; };
 		CF2FE30E26C7145A0040A985 /* SketchyLineExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30D26C7145A0040A985 /* SketchyLineExample.swift */; };
 		CF6E1FA527B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6E1FA427B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift */; };
 		CFA165AC27B7044700C0EFDB /* InsetCornerShapeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA165AB27B7044700C0EFDB /* InsetCornerShapeExample.swift */; };
+		CFD47CCB27DA431800428F9B /* CornerCustomExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD47CCA27DA431800428F9B /* CornerCustomExample.swift */; };
+		CFD47CCD27DA499600428F9B /* CornerStyleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD47CCC27DA499600428F9B /* CornerStyleExample.swift */; };
 		CFD6965F26F431D4008D58AD /* EmbossExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6965E26F431D4008D58AD /* EmbossExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF03C89D27D94E7C008B415E /* CornerTriangleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerTriangleExample.swift; sourceTree = "<group>"; };
+		CF03C89F27D9506E008B415E /* CornerPentagonExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerPentagonExample.swift; sourceTree = "<group>"; };
+		CF03C8A127D955E4008B415E /* NotchedPentagonExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchedPentagonExample.swift; sourceTree = "<group>"; };
+		CF03C8A327D956AA008B415E /* NotchedExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchedExample.swift; sourceTree = "<group>"; };
+		CF03C8A527D95748008B415E /* NotchedTriangleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchedTriangleExample.swift; sourceTree = "<group>"; };
+		CF03C8A727D957EB008B415E /* NestedCornerStyleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedCornerStyleExample.swift; sourceTree = "<group>"; };
 		CF0FB7F127D7DD6E00B9C775 /* Color+brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+brand.swift"; sourceTree = "<group>"; };
 		CF2FE2ED26C7061A0040A985 /* ShapeUpExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShapeUpExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2FE2F026C7061A0040A985 /* ShapeUpExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeUpExampleApp.swift; sourceTree = "<group>"; };
@@ -36,11 +50,13 @@
 		CF2FE30526C706EE0040A985 /* CornerRectangleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRectangleExample.swift; sourceTree = "<group>"; };
 		CF2FE30726C708D20040A985 /* CornerShapeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerShapeExample.swift; sourceTree = "<group>"; };
 		CF2FE30926C70DC30040A985 /* NotchedRectangleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchedRectangleExample.swift; sourceTree = "<group>"; };
-		CF2FE30B26C7124B0040A985 /* ShapeLibraryExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeLibraryExample.swift; sourceTree = "<group>"; };
+		CF2FE30B26C7124B0040A985 /* ShapesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesExample.swift; sourceTree = "<group>"; };
 		CF2FE30D26C7145A0040A985 /* SketchyLineExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchyLineExample.swift; sourceTree = "<group>"; };
 		CF6E1FA427B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOpenCornerShapeExample.swift; sourceTree = "<group>"; };
 		CF91518D27C8189100328D30 /* ShapeUp */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ShapeUp; path = ../ShapeUp; sourceTree = "<group>"; };
 		CFA165AB27B7044700C0EFDB /* InsetCornerShapeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetCornerShapeExample.swift; sourceTree = "<group>"; };
+		CFD47CCA27DA431800428F9B /* CornerCustomExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerCustomExample.swift; sourceTree = "<group>"; };
+		CFD47CCC27DA499600428F9B /* CornerStyleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerStyleExample.swift; sourceTree = "<group>"; };
 		CFD6965E26F431D4008D58AD /* EmbossExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbossExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,12 +96,20 @@
 				CF2FE2F226C7061A0040A985 /* ContentView.swift */,
 				CF0FB7F127D7DD6E00B9C775 /* Color+brand.swift */,
 				CF2FE30326C706AD0040A985 /* ShapeUpLogoView.swift */,
-				CF6E1FA427B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift */,
-				CF2FE30526C706EE0040A985 /* CornerRectangleExample.swift */,
+				CFD47CCC27DA499600428F9B /* CornerStyleExample.swift */,
 				CF2FE30726C708D20040A985 /* CornerShapeExample.swift */,
-				CFA165AB27B7044700C0EFDB /* InsetCornerShapeExample.swift */,
+				CFD47CCA27DA431800428F9B /* CornerCustomExample.swift */,
+				CF2FE30B26C7124B0040A985 /* ShapesExample.swift */,
+				CF2FE30526C706EE0040A985 /* CornerRectangleExample.swift */,
+				CF03C89D27D94E7C008B415E /* CornerTriangleExample.swift */,
+				CF03C89F27D9506E008B415E /* CornerPentagonExample.swift */,
+				CF03C8A727D957EB008B415E /* NestedCornerStyleExample.swift */,
+				CF03C8A327D956AA008B415E /* NotchedExample.swift */,
 				CF2FE30926C70DC30040A985 /* NotchedRectangleExample.swift */,
-				CF2FE30B26C7124B0040A985 /* ShapeLibraryExample.swift */,
+				CF03C8A527D95748008B415E /* NotchedTriangleExample.swift */,
+				CF03C8A127D955E4008B415E /* NotchedPentagonExample.swift */,
+				CFA165AB27B7044700C0EFDB /* InsetCornerShapeExample.swift */,
+				CF6E1FA427B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift */,
 				CFD6965E26F431D4008D58AD /* EmbossExample.swift */,
 				CF2FE30D26C7145A0040A985 /* SketchyLineExample.swift */,
 				CF2FE2F426C7061C0040A985 /* Assets.xcassets */,
@@ -178,18 +202,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF2FE30C26C7124B0040A985 /* ShapeLibraryExample.swift in Sources */,
+				CF03C8A427D956AA008B415E /* NotchedExample.swift in Sources */,
+				CF2FE30C26C7124B0040A985 /* ShapesExample.swift in Sources */,
 				CF2FE30626C706EE0040A985 /* CornerRectangleExample.swift in Sources */,
 				CF2FE30E26C7145A0040A985 /* SketchyLineExample.swift in Sources */,
+				CF03C8A627D95748008B415E /* NotchedTriangleExample.swift in Sources */,
 				CF2FE30426C706AD0040A985 /* ShapeUpLogoView.swift in Sources */,
+				CFD47CCB27DA431800428F9B /* CornerCustomExample.swift in Sources */,
 				CF2FE2F326C7061A0040A985 /* ContentView.swift in Sources */,
 				CF0FB7F227D7DD6E00B9C775 /* Color+brand.swift in Sources */,
+				CF03C8A227D955E4008B415E /* NotchedPentagonExample.swift in Sources */,
 				CF2FE30826C708D20040A985 /* CornerShapeExample.swift in Sources */,
 				CF6E1FA527B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift in Sources */,
 				CF2FE30A26C70DC30040A985 /* NotchedRectangleExample.swift in Sources */,
+				CFD47CCD27DA499600428F9B /* CornerStyleExample.swift in Sources */,
+				CF03C8A027D9506E008B415E /* CornerPentagonExample.swift in Sources */,
+				CF03C89E27D94E7C008B415E /* CornerTriangleExample.swift in Sources */,
 				CFA165AC27B7044700C0EFDB /* InsetCornerShapeExample.swift in Sources */,
 				CF2FE2F126C7061A0040A985 /* ShapeUpExampleApp.swift in Sources */,
 				CFD6965F26F431D4008D58AD /* EmbossExample.swift in Sources */,
+				CF03C8A827D957EB008B415E /* NestedCornerStyleExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
