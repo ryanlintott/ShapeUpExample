@@ -9,33 +9,30 @@ import ShapeUp
 import SwiftUI
 
 struct EmbossExample: View {
-    let color: Color = .blue
-    let size: CGFloat = 4
     let angle: Angle = .degrees(45)
-    let opacity: Double = 1
     
     var body: some View {
         VStack(spacing: 40) {
             Circle()
-                .fill(color)
-                .emboss(using: Circle(), size: size, angle: angle, opacity: opacity)
+                .fill(Color.suPurple)
+                .emboss(using: Circle(), size: 4, angle: angle, opacity: 1)
             
             Image(systemName: "heart")
                 .resizable()
                 .scaledToFit()
-                .deboss(baseColor: .red, amount: 3, blur: 2, angle: angle, opacity: 0.8)
+                .deboss(baseColor: .suPurple, amount: 1, blur: 1, angle: angle, opacity: 0.3)
             
             Text("Hello World")
                 .font(.largeTitle)
                 .bold()
-                .foregroundColor(.blue)
-                .emboss(amount: 1, angle: angle + .degrees(180), opacity: 0.8)
+                .foregroundColor(.suPurple)
+                .deboss(amount: 0.5, angle: angle, opacity: 0.5)
                 
             CornerPentagon(pointHeight: 20, topTaper: .relative(0.5), bottomTaper: .relative(0.2))
-                .embossEdges(size: size, angle: angle, opacity: opacity)
+                .embossEdges(size: 4, angle: angle, opacity: 1)
         }
         .padding(50)
-        .background(Color.gray)
+        .background(Color.suPurple.edgesIgnoringSafeArea(.all))
         .navigationTitle("Emboss")
     }
 }
