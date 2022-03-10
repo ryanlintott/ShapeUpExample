@@ -26,7 +26,7 @@ struct NotchedPentagonExample: View {
                 .rectangle(length: 20, depth: 10, cornerStyle: .rounded(radius: .relative(0.4)))
             ])
         }
-        .fill(Color.suPurple)
+        .fill(Color.suYellow)
         .frame(width: 300, height: 300)
         .navigationTitle("NotchedPentagon")
     }

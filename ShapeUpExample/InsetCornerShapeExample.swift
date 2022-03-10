@@ -28,7 +28,7 @@ struct InsetCornerShapeExample: View {
     var body: some View {
         ZStack {
             InsetCornerShape()
-                .strokeBorder(.blue, lineWidth: 15)
+                .strokeBorder(Color.suCyan, lineWidth: 15)
         }
             .frame(width: 200, height: 200)
             .navigationTitle("InsetCornerShape")

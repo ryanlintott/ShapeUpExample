@@ -26,13 +26,14 @@ struct NestedCornerStyleExample: View {
             CornerTriangle()
                 .applyingStyle(straightCutout)
                 .strokeBorder(Color.suPink, lineWidth: 8)
-                .frame(width: 200, height: 200)
+                .frame(width: 150, height: 150)
             
             CornerPentagon(pointHeight: .relative(0.3), bottomTaper: .relative(0.2))
                 .applyingStyle(cutoutStraight)
                 .strokeBorder(Color.suCyan, lineWidth: 8)
-                .frame(width: 200, height: 200)
+                .frame(width: 150, height: 150)
         }
+        .navigationTitle("Nested Corners")
     }
 }
 

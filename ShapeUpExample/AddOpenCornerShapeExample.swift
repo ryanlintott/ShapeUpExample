@@ -48,7 +48,7 @@ struct AddOpenCornerShapeExample: View {
     var body: some View {
         VStack {
             OpenCornerShape()
-                .stroke(.blue, lineWidth: 10)
+                .stroke(Color.suPink, lineWidth: 10)
                 .frame(width: 200, height: 200)
                 .navigationTitle("AddOpenCornerShape")
             
