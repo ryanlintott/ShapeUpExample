@@ -62,6 +62,7 @@ struct BasicCompareExample: View {
             Text("ShapeUp CornerCustom - 1 line\n(Insettable)")
         }
         .multilineTextAlignment(.center)
+        .padding()
     }
 }
 
