@@ -26,6 +26,7 @@
 		CF2FE30C26C7124B0040A985 /* ShapesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30B26C7124B0040A985 /* ShapesExample.swift */; };
 		CF2FE30E26C7145A0040A985 /* SketchyLineExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30D26C7145A0040A985 /* SketchyLineExample.swift */; };
 		CF6E1FA527B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6E1FA427B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift */; };
+		CF862C4627ED4E5B005AC256 /* MessageBubble5Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF862C4527ED4E5B005AC256 /* MessageBubble5Example.swift */; };
 		CFA165AC27B7044700C0EFDB /* InsetCornerShapeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA165AB27B7044700C0EFDB /* InsetCornerShapeExample.swift */; };
 		CFA245F727ECFBA100953C2B /* MessageBubbleInsetExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA245F627ECFBA100953C2B /* MessageBubbleInsetExample.swift */; };
 		CFA245F927ED217500953C2B /* RectangleExample2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA245F827ED217500953C2B /* RectangleExample2.swift */; };
@@ -62,6 +63,7 @@
 		CF2FE30B26C7124B0040A985 /* ShapesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesExample.swift; sourceTree = "<group>"; };
 		CF2FE30D26C7145A0040A985 /* SketchyLineExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchyLineExample.swift; sourceTree = "<group>"; };
 		CF6E1FA427B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOpenCornerShapeExample.swift; sourceTree = "<group>"; };
+		CF862C4527ED4E5B005AC256 /* MessageBubble5Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble5Example.swift; sourceTree = "<group>"; };
 		CF91518D27C8189100328D30 /* ShapeUp */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ShapeUp; path = ../ShapeUp; sourceTree = "<group>"; };
 		CFA165AB27B7044700C0EFDB /* InsetCornerShapeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetCornerShapeExample.swift; sourceTree = "<group>"; };
 		CFA245F627ECFBA100953C2B /* MessageBubbleInsetExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleInsetExample.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				CFB5482427ECCD29009B699A /* MessageBubble2Example.swift */,
 				CFB5482627ECCEAB009B699A /* MessageBubble3Example.swift */,
 				CFB5482827ECD217009B699A /* MessageBubble4Example.swift */,
+				CF862C4527ED4E5B005AC256 /* MessageBubble5Example.swift */,
 				CFA245F627ECFBA100953C2B /* MessageBubbleInsetExample.swift */,
 			);
 			path = MessageBubble;
@@ -257,6 +260,7 @@
 				CFB5482527ECCD29009B699A /* MessageBubble2Example.swift in Sources */,
 				CF6E1FA527B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift in Sources */,
 				CF2FE30A26C70DC30040A985 /* NotchedRectangleExample.swift in Sources */,
+				CF862C4627ED4E5B005AC256 /* MessageBubble5Example.swift in Sources */,
 				CFD47CCD27DA499600428F9B /* CornerStyleExample.swift in Sources */,
 				CFA245F727ECFBA100953C2B /* MessageBubbleInsetExample.swift in Sources */,
 				CF03C8A027D9506E008B415E /* CornerPentagonExample.swift in Sources */,

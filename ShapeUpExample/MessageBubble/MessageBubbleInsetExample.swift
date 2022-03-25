@@ -39,7 +39,7 @@ struct MessageBubbleInsetExample: View {
     }
 }
 
-struct MessageBubble5Example_Previews: PreviewProvider {
+struct MessageBubbleInsetExample_Previews: PreviewProvider {
     static var previews: some View {
         MessageBubbleInsetExample()
     }
