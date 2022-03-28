@@ -52,6 +52,10 @@ struct ContentView: View {
                     NavigationLink(destination: NotchedExample()) {
                         Label("Notched", systemImage: "bookmark")
                     }
+
+                    NavigationLink(destination: MessageBubbleExamples()) {
+                        Label("Message Bubble", systemImage: "bubble.middle.bottom")
+                    }
                     
                     NavigationLink(destination: InsetCornerShapeExample()) {
                         Label("InsetCornerShape", systemImage: "rectangle.inset.filled")

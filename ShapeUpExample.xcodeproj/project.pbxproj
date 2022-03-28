@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A82F36C27F0FFD1005D0441 /* MessageBubbleExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A82F36B27F0FFD1005D0441 /* MessageBubbleExamples.swift */; };
 		CF03C89E27D94E7C008B415E /* CornerTriangleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03C89D27D94E7C008B415E /* CornerTriangleExample.swift */; };
 		CF03C8A027D9506E008B415E /* CornerPentagonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03C89F27D9506E008B415E /* CornerPentagonExample.swift */; };
 		CF03C8A227D955E4008B415E /* NotchedPentagonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03C8A127D955E4008B415E /* NotchedPentagonExample.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A82F36B27F0FFD1005D0441 /* MessageBubbleExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleExamples.swift; sourceTree = "<group>"; };
 		CF03C89D27D94E7C008B415E /* CornerTriangleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerTriangleExample.swift; sourceTree = "<group>"; };
 		CF03C89F27D9506E008B415E /* CornerPentagonExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerPentagonExample.swift; sourceTree = "<group>"; };
 		CF03C8A127D955E4008B415E /* NotchedPentagonExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchedPentagonExample.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				CFD47CCC27DA499600428F9B /* CornerStyleExample.swift */,
 				CFD47CCE27DA879900428F9B /* BasicCompareExample.swift */,
 				CF2FE30726C708D20040A985 /* CornerShapeExample.swift */,
+				8A82F36B27F0FFD1005D0441 /* MessageBubbleExamples.swift */,
 				CFB5482A27ECD2CF009B699A /* MessageBubble */,
 				CFD47CCA27DA431800428F9B /* CornerCustomExample.swift */,
 				CF2FE30B26C7124B0040A985 /* ShapesExample.swift */,
@@ -249,6 +252,7 @@
 				CFB5482C27ECD2E6009B699A /* MessageBubble0Example.swift in Sources */,
 				CF2FE30426C706AD0040A985 /* ShapeUpLogoView.swift in Sources */,
 				CFD47CCB27DA431800428F9B /* CornerCustomExample.swift in Sources */,
+				8A82F36C27F0FFD1005D0441 /* MessageBubbleExamples.swift in Sources */,
 				CFB5482727ECCEAB009B699A /* MessageBubble3Example.swift in Sources */,
 				CF2FE2F326C7061A0040A985 /* ContentView.swift in Sources */,
 				CFB5482127ECC745009B699A /* RectangleExample.swift in Sources */,
