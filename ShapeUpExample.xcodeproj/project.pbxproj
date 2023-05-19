@@ -27,6 +27,8 @@
 		CF2FE30C26C7124B0040A985 /* ShapesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30B26C7124B0040A985 /* ShapesExample.swift */; };
 		CF2FE30E26C7145A0040A985 /* SketchyLineExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30D26C7145A0040A985 /* SketchyLineExample.swift */; };
 		CF6E1FA527B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6E1FA427B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift */; };
+		CF741BA628C298E800C59C65 /* InsettableShapeByPropertyExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF741BA528C298E800C59C65 /* InsettableShapeByPropertyExample.swift */; };
+		CF78EF5C27F500C200F67ED0 /* FoldButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF78EF5B27F500C200F67ED0 /* FoldButton.swift */; };
 		CF862C4627ED4E5B005AC256 /* MessageBubble5Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF862C4527ED4E5B005AC256 /* MessageBubble5Example.swift */; };
 		CFA165AC27B7044700C0EFDB /* InsetCornerShapeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA165AB27B7044700C0EFDB /* InsetCornerShapeExample.swift */; };
 		CFA245F727ECFBA100953C2B /* MessageBubbleInsetExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA245F627ECFBA100953C2B /* MessageBubbleInsetExample.swift */; };
@@ -41,6 +43,7 @@
 		CFD47CCD27DA499600428F9B /* CornerStyleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD47CCC27DA499600428F9B /* CornerStyleExample.swift */; };
 		CFD47CCF27DA879900428F9B /* BasicCompareExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD47CCE27DA879900428F9B /* BasicCompareExample.swift */; };
 		CFD6965F26F431D4008D58AD /* EmbossExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6965E26F431D4008D58AD /* EmbossExample.swift */; };
+		CFFEAF1127F269790086ECC5 /* HexagonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEAF1027F269790086ECC5 /* HexagonExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +68,8 @@
 		CF2FE30B26C7124B0040A985 /* ShapesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesExample.swift; sourceTree = "<group>"; };
 		CF2FE30D26C7145A0040A985 /* SketchyLineExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchyLineExample.swift; sourceTree = "<group>"; };
 		CF6E1FA427B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOpenCornerShapeExample.swift; sourceTree = "<group>"; };
+		CF741BA528C298E800C59C65 /* InsettableShapeByPropertyExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsettableShapeByPropertyExample.swift; sourceTree = "<group>"; };
+		CF78EF5B27F500C200F67ED0 /* FoldButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldButton.swift; sourceTree = "<group>"; };
 		CF862C4527ED4E5B005AC256 /* MessageBubble5Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble5Example.swift; sourceTree = "<group>"; };
 		CF91518D27C8189100328D30 /* ShapeUp */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ShapeUp; path = ../ShapeUp; sourceTree = "<group>"; };
 		CFA165AB27B7044700C0EFDB /* InsetCornerShapeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetCornerShapeExample.swift; sourceTree = "<group>"; };
@@ -80,6 +85,7 @@
 		CFD47CCC27DA499600428F9B /* CornerStyleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerStyleExample.swift; sourceTree = "<group>"; };
 		CFD47CCE27DA879900428F9B /* BasicCompareExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCompareExample.swift; sourceTree = "<group>"; };
 		CFD6965E26F431D4008D58AD /* EmbossExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbossExample.swift; sourceTree = "<group>"; };
+		CFFEAF1027F269790086ECC5 /* HexagonExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,8 @@
 				8A82F36B27F0FFD1005D0441 /* MessageBubbleExamples.swift */,
 				CFB5482A27ECD2CF009B699A /* MessageBubble */,
 				CFD47CCA27DA431800428F9B /* CornerCustomExample.swift */,
+				CFFEAF1027F269790086ECC5 /* HexagonExample.swift */,
+				CF78EF5B27F500C200F67ED0 /* FoldButton.swift */,
 				CF2FE30B26C7124B0040A985 /* ShapesExample.swift */,
 				CF2FE30526C706EE0040A985 /* CornerRectangleExample.swift */,
 				CFB5482027ECC745009B699A /* RectangleExample.swift */,
@@ -136,6 +144,7 @@
 				CF03C8A527D95748008B415E /* NotchedTriangleExample.swift */,
 				CF03C8A127D955E4008B415E /* NotchedPentagonExample.swift */,
 				CFA165AB27B7044700C0EFDB /* InsetCornerShapeExample.swift */,
+				CF741BA528C298E800C59C65 /* InsettableShapeByPropertyExample.swift */,
 				CF6E1FA427B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift */,
 				CFD6965E26F431D4008D58AD /* EmbossExample.swift */,
 				CF2FE30D26C7145A0040A985 /* SketchyLineExample.swift */,
@@ -264,10 +273,13 @@
 				CFB5482527ECCD29009B699A /* MessageBubble2Example.swift in Sources */,
 				CF6E1FA527B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift in Sources */,
 				CF2FE30A26C70DC30040A985 /* NotchedRectangleExample.swift in Sources */,
+				CF741BA628C298E800C59C65 /* InsettableShapeByPropertyExample.swift in Sources */,
 				CF862C4627ED4E5B005AC256 /* MessageBubble5Example.swift in Sources */,
 				CFD47CCD27DA499600428F9B /* CornerStyleExample.swift in Sources */,
 				CFA245F727ECFBA100953C2B /* MessageBubbleInsetExample.swift in Sources */,
+				CFFEAF1127F269790086ECC5 /* HexagonExample.swift in Sources */,
 				CF03C8A027D9506E008B415E /* CornerPentagonExample.swift in Sources */,
+				CF78EF5C27F500C200F67ED0 /* FoldButton.swift in Sources */,
 				CF03C89E27D94E7C008B415E /* CornerTriangleExample.swift in Sources */,
 				CFB5482327ECCA3B009B699A /* MessageBubble1Example.swift in Sources */,
 				CFA165AC27B7044700C0EFDB /* InsetCornerShapeExample.swift in Sources */,

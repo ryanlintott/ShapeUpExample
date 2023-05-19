@@ -70,6 +70,10 @@ struct ContentView: View {
                             Label("SketchyLine", systemImage: "highlighter")
                         }
                         
+                        NavigationLink(destination: InsettableShapeByPropertyExample()) {
+                            Label("InsetByProperty", systemImage: "circle.inset.filled")
+                        }
+                        
                         NavigationLink(destination: EmbossExample()) {
                             Label("Emboss", systemImage: "rectangle.dashed")
                         }

@@ -31,10 +31,25 @@ struct MessageBubble3: CornerShape {
 }
 
 struct MessageBubble3Example: View {
+    @State private var cornerRadius: RelatableValue = 20
+    
     var body: some View {
-        MessageBubble3(cornerRadius: 20, pointSize: 20, pointRadius: 10)
-            .fill(Color.suPurple)
-            .frame(width: 200, height: 120)
+        VStack {
+            MessageBubble3(cornerRadius: cornerRadius, pointSize: 20, pointRadius: 10)
+                .fill(Color.suPurple)
+                .frame(width: 200, height: 120)
+                .animation(.spring(), value: cornerRadius)
+            
+            Button("5") {
+                cornerRadius = 5
+            }
+            Button("20") {
+                cornerRadius = 20
+            }
+            Button("50") {
+                cornerRadius = 50
+            }
+        }
     }
 }
 
