@@ -1,5 +1,5 @@
 //
-//  ShapesExample.swift
+//  BasicShapes.swift
 //  ShapeUpExample
 //
 //  Created by Ryan Lintott on 2021-08-13.
@@ -8,9 +8,9 @@
 import ShapeUp
 import SwiftUI
 
-struct ShapesExample: View {
+struct BasicShapes: View {
     var body: some View {
-        List {
+        Section {
             NavigationLink(destination: CornerRectangleExample()) {
                 Label("CornerRectangle", systemImage: "rectangle")
             }
@@ -22,13 +22,16 @@ struct ShapesExample: View {
             NavigationLink(destination: CornerPentagonExample()) {
                 Label("CornerPentagon", systemImage: "pentagon")
             }
+        } header: {
+            Text("Basic Shapes")
         }
-        .navigationTitle("Shapes")
     }
 }
 
-struct ShapesExample_Previews: PreviewProvider {
+struct BasicShapes_Previews: PreviewProvider {
     static var previews: some View {
-        ShapesExample()
+        List {
+            BasicShapes()
+        }
     }
 }

@@ -39,6 +39,8 @@ struct CornerPentagonExample: View {
 
 struct CornerPentagonExample_Previews: PreviewProvider {
     static var previews: some View {
-        CornerPentagonExample()
+        NavigationView {
+            CornerPentagonExample()
+        }
     }
 }

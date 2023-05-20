@@ -8,83 +8,131 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        NavigationView {
+    var logo: some View {
+        Image("ShapeUp-logo")
+            .resizable()
+            .scaledToFit()
+            .frame(maxWidth: 400)
+            .padding()
+    }
+    
+    @ViewBuilder
+    var examples: some View {
+        Section {
+            NavigationLink(destination: BasicCompareExample()) {
+                Label("Basic Comparison", systemImage: "rectangle.grid.1x2")
+            }
             
+            NavigationLink(destination: CornerStyleExample()) {
+                Label("CornerStyle", systemImage: "arrow.up.forward.app")
+            }
+            
+            NavigationLink(destination: CornerShapeExample()) {
+                Label("CornerShape", systemImage: "square.and.pencil")
+            }
+            
+            NavigationLink(destination: CornerCustomExample()) {
+                Label("CornerCustom", systemImage: "skew")
+            }
+        } header: {
+            Text("CornerShape")
+        }
+        
+        BasicShapes()
+        
+        Section {
+            NavigationLink(destination: ShapeUpLogoView()) {
+                Label("ShapeUp Logo", systemImage: "arrowtriangle.up")
+            }
+            
+            NavigationLink(destination: NestedCornerStyleExample()) {
+                Label("Nested CornerStyle", systemImage: "seal")
+            }
+            
+            NavigationLink(destination: InsetCornerShapeExample()) {
+                Label("InsetCornerShape", systemImage: "rectangle.inset.filled")
+            }
+            
+            NavigationLink(destination: AddOpenCornerShapeExample()) {
+                Label("AddOpenCornerShape", systemImage: "scribble")
+            }
+        } header: {
+            Text("Custom Shapes")
+        }
+        
+        NotchedExample()
+
+        MessageBubbleExamples()
+        
+        Section {
+            NavigationLink(destination: InsettableShapeByPropertyExample()) {
+                Label("InsetByProperty", systemImage: "circle.inset.filled")
+            }
+        } header: {
+            Text("InsettableShapeByProperty")
+        }
+        
+        Section {
+            NavigationLink(destination: SketchyLineExample()) {
+                Label("SketchyLine", systemImage: "highlighter")
+            }
+        } header: {
+            Text("SketchyLine")
+        }
+        
+        Section {
+            NavigationLink(destination: EmbossExample()) {
+                Label("Emboss", systemImage: "rectangle.dashed")
+            }
+        } header: {
+            Text("Emboss")
+        }
+    }
+    
+    let title = "ShapeUp"
+    
+    var body: some View {
+        #if os(iOS)
+        NavigationView {
             VStack {
-                Image("ShapeUp-logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(maxWidth: 400)
-                    .padding()
+                logo
                 
                 List {
-                    Group {
-                        NavigationLink(destination: ShapeUpLogoView()) {
-                            Label("ShapeUp Logo", systemImage: "arrowtriangle.up")
-                        }
-                        
-                        NavigationLink(destination: BasicCompareExample()) {
-                            Label("Basic Comparison", systemImage: "rectangle.grid.1x2")
-                        }
-                        
-                        NavigationLink(destination: CornerStyleExample()) {
-                            Label("CornerStyle", systemImage: "arrow.up.forward.app")
-                        }
-                        
-                        NavigationLink(destination: CornerShapeExample()) {
-                            Label("CornerShape", systemImage: "square.and.pencil")
-                        }
-                        
-                        NavigationLink(destination: CornerCustomExample()) {
-                            Label("CornerCustom", systemImage: "skew")
-                        }
-                    }
-                    
-                    NavigationLink(destination: ShapesExample()) {
-                        Label("Shapes", systemImage: "pentagon")
-                    }
-                    
-                    NavigationLink(destination: NestedCornerStyleExample()) {
-                        Label("Nested CornerStyle", systemImage: "seal")
-                    }
-                    
-                    NavigationLink(destination: NotchedExample()) {
-                        Label("Notched", systemImage: "bookmark")
-                    }
-
-                    NavigationLink(destination: MessageBubbleExamples()) {
-                        Label("Message Bubble", systemImage: "bubble.middle.bottom")
-                    }
-                    
-                    NavigationLink(destination: InsetCornerShapeExample()) {
-                        Label("InsetCornerShape", systemImage: "rectangle.inset.filled")
-                    }
-                    
-                    NavigationLink(destination: AddOpenCornerShapeExample()) {
-                        Label("AddOpenCornerShape", systemImage: "scribble")
-                    }
-                    
-                    Group {
-                        NavigationLink(destination: SketchyLineExample()) {
-                            Label("SketchyLine", systemImage: "highlighter")
-                        }
-                        
-                        NavigationLink(destination: InsettableShapeByPropertyExample()) {
-                            Label("InsetByProperty", systemImage: "circle.inset.filled")
-                        }
-                        
-                        NavigationLink(destination: EmbossExample()) {
-                            Label("Emboss", systemImage: "rectangle.dashed")
-                        }
-                    }
+                    examples
                 }
             }
-            .navigationTitle("ShapeUp")
+            .navigationTitle(title)
             .navigationBarHidden(true)
         }
-        .navigationViewStyle(.stack)
-        .accentColor(.suPink)
+        #else
+        if #available(macOS 13, *) {
+            NavigationSplitView {
+                VStack {
+                    logo
+
+                    List {
+                        examples
+                    }
+                }
+                .navigationTitle(title)
+            } detail: {
+                Text("Select an example.")
+            }
+        } else {
+            NavigationView {
+                VStack {
+                    logo
+                    
+                    List {
+                        examples
+                    }
+                }
+                .navigationTitle(title)
+                
+                Text("Select an example.")
+            }
+        }
+        #endif
     }
 }
 

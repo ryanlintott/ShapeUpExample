@@ -35,7 +35,9 @@ struct CornerTriangleExample: View {
 
 struct CornerTriangleExample_Previews: PreviewProvider {
     static var previews: some View {
-        CornerTriangleExample()
+        NavigationView {
+            CornerTriangleExample()
+        }
     }
 }
 

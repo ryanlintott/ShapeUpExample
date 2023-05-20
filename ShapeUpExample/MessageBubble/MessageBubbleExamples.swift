@@ -10,7 +10,7 @@ import SwiftUI
 
 struct MessageBubbleExamples: View {
     var body: some View {
-        List {
+        Section {
             NavigationLink(destination: MessageBubble0Example()) {
                 Label("SwiftUI.Shape", systemImage: "bubble.middle.bottom")
             }
@@ -30,14 +30,17 @@ struct MessageBubbleExamples: View {
             NavigationLink(destination: MessageBubbleInsetExample()) {
                 Label("CornerCustom - Insettable Shape", systemImage: "bubble.middle.bottom")
             }
-            .navigationTitle("Message Bubble")
+        } header: {
+            Text("Message Bubble")
         }
     }
 }
 
 struct MessageBubbleExamples_Previews: PreviewProvider {
     static var previews: some View {
-        MessageBubbleExamples()
+        List {
+            MessageBubbleExamples()
+        }
     }
 }
 

@@ -12,6 +12,7 @@ struct ShapeUpExampleApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .accentColor(.suPink)
         }
     }
 }

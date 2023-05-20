@@ -12,7 +12,7 @@ import SwiftUI
 
 struct NotchedExample: View {
     var body: some View {
-        List {
+        Section {
             NavigationLink(destination: NotchedRectangleExample()) {
                 Label("NotchedRectangle", systemImage: "rectangle")
             }
@@ -24,8 +24,9 @@ struct NotchedExample: View {
             NavigationLink(destination: NotchedPentagonExample()) {
                 Label("NotchedPentagon", systemImage: "pentagon")
             }
+        } header: {
+            Text("Notched")
         }
-        .navigationTitle("Notched")
     }
 }
 

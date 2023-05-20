@@ -49,17 +49,17 @@ struct BasicCompareExample: View {
             SwiftUIBasicShape()
                 .fill(Color.suPurple)
             
-            Text("SwiftUI Shape - 30 lines\n(Not insettable)")
+            Text("SwiftUI Shape - 30 lines of code\n(Not insettable)")
             
             ShapeUpBasicShape()
                 .fill(Color.suPink)
             
-            Text("ShapeUp CornerShape - 12 lines\n(Insettable)")
+            Text("ShapeUp CornerShape - 12 lines of code\n(Insettable)")
             
             CornerCustom { $0.points(.top, .right, .bottom, .left).corners([.rounded(radius: .relative(0.5))]) }
                 .fill(Color.suCyan)
             
-            Text("ShapeUp CornerCustom - 1 line\n(Insettable)")
+            Text("ShapeUp CornerCustom - 1 line of code\n(Insettable)")
         }
         .multilineTextAlignment(.center)
         .padding()

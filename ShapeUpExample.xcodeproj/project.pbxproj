@@ -24,7 +24,7 @@
 		CF2FE30626C706EE0040A985 /* CornerRectangleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30526C706EE0040A985 /* CornerRectangleExample.swift */; };
 		CF2FE30826C708D20040A985 /* CornerShapeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30726C708D20040A985 /* CornerShapeExample.swift */; };
 		CF2FE30A26C70DC30040A985 /* NotchedRectangleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30926C70DC30040A985 /* NotchedRectangleExample.swift */; };
-		CF2FE30C26C7124B0040A985 /* ShapesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30B26C7124B0040A985 /* ShapesExample.swift */; };
+		CF2FE30C26C7124B0040A985 /* BasicShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30B26C7124B0040A985 /* BasicShapes.swift */; };
 		CF2FE30E26C7145A0040A985 /* SketchyLineExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30D26C7145A0040A985 /* SketchyLineExample.swift */; };
 		CF6E1FA527B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6E1FA427B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift */; };
 		CF741BA628C298E800C59C65 /* InsettableShapeByPropertyExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF741BA528C298E800C59C65 /* InsettableShapeByPropertyExample.swift */; };
@@ -39,6 +39,7 @@
 		CFB5482727ECCEAB009B699A /* MessageBubble3Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB5482627ECCEAB009B699A /* MessageBubble3Example.swift */; };
 		CFB5482927ECD217009B699A /* MessageBubble4Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB5482827ECD217009B699A /* MessageBubble4Example.swift */; };
 		CFB5482C27ECD2E6009B699A /* MessageBubble0Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB5482B27ECD2E6009B699A /* MessageBubble0Example.swift */; };
+		CFCBC9752A18641A00C28E68 /* CornerStyleExample2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCBC9742A18641A00C28E68 /* CornerStyleExample2.swift */; };
 		CFD47CCB27DA431800428F9B /* CornerCustomExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD47CCA27DA431800428F9B /* CornerCustomExample.swift */; };
 		CFD47CCD27DA499600428F9B /* CornerStyleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD47CCC27DA499600428F9B /* CornerStyleExample.swift */; };
 		CFD47CCF27DA879900428F9B /* BasicCompareExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD47CCE27DA879900428F9B /* BasicCompareExample.swift */; };
@@ -65,7 +66,7 @@
 		CF2FE30526C706EE0040A985 /* CornerRectangleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRectangleExample.swift; sourceTree = "<group>"; };
 		CF2FE30726C708D20040A985 /* CornerShapeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerShapeExample.swift; sourceTree = "<group>"; };
 		CF2FE30926C70DC30040A985 /* NotchedRectangleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchedRectangleExample.swift; sourceTree = "<group>"; };
-		CF2FE30B26C7124B0040A985 /* ShapesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesExample.swift; sourceTree = "<group>"; };
+		CF2FE30B26C7124B0040A985 /* BasicShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicShapes.swift; sourceTree = "<group>"; };
 		CF2FE30D26C7145A0040A985 /* SketchyLineExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchyLineExample.swift; sourceTree = "<group>"; };
 		CF6E1FA427B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOpenCornerShapeExample.swift; sourceTree = "<group>"; };
 		CF741BA528C298E800C59C65 /* InsettableShapeByPropertyExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsettableShapeByPropertyExample.swift; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		CFB5482627ECCEAB009B699A /* MessageBubble3Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble3Example.swift; sourceTree = "<group>"; };
 		CFB5482827ECD217009B699A /* MessageBubble4Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble4Example.swift; sourceTree = "<group>"; };
 		CFB5482B27ECD2E6009B699A /* MessageBubble0Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble0Example.swift; sourceTree = "<group>"; };
+		CFCBC9742A18641A00C28E68 /* CornerStyleExample2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerStyleExample2.swift; sourceTree = "<group>"; };
 		CFD47CCA27DA431800428F9B /* CornerCustomExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerCustomExample.swift; sourceTree = "<group>"; };
 		CFD47CCC27DA499600428F9B /* CornerStyleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerStyleExample.swift; sourceTree = "<group>"; };
 		CFD47CCE27DA879900428F9B /* BasicCompareExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCompareExample.swift; sourceTree = "<group>"; };
@@ -124,25 +126,19 @@
 				CF2FE2F226C7061A0040A985 /* ContentView.swift */,
 				CF0FB7F127D7DD6E00B9C775 /* Color+brand.swift */,
 				CF2FE30326C706AD0040A985 /* ShapeUpLogoView.swift */,
-				CFD47CCC27DA499600428F9B /* CornerStyleExample.swift */,
-				CFD47CCE27DA879900428F9B /* BasicCompareExample.swift */,
 				CF2FE30726C708D20040A985 /* CornerShapeExample.swift */,
-				8A82F36B27F0FFD1005D0441 /* MessageBubbleExamples.swift */,
+				CFD47CCC27DA499600428F9B /* CornerStyleExample.swift */,
+				CFCBC9742A18641A00C28E68 /* CornerStyleExample2.swift */,
+				CFD47CCE27DA879900428F9B /* BasicCompareExample.swift */,
 				CFB5482A27ECD2CF009B699A /* MessageBubble */,
 				CFD47CCA27DA431800428F9B /* CornerCustomExample.swift */,
+				CFCBC9702A181E2600C28E68 /* BasicShapes */,
 				CFFEAF1027F269790086ECC5 /* HexagonExample.swift */,
 				CF78EF5B27F500C200F67ED0 /* FoldButton.swift */,
-				CF2FE30B26C7124B0040A985 /* ShapesExample.swift */,
-				CF2FE30526C706EE0040A985 /* CornerRectangleExample.swift */,
 				CFB5482027ECC745009B699A /* RectangleExample.swift */,
 				CFA245F827ED217500953C2B /* RectangleExample2.swift */,
-				CF03C89D27D94E7C008B415E /* CornerTriangleExample.swift */,
-				CF03C89F27D9506E008B415E /* CornerPentagonExample.swift */,
 				CF03C8A727D957EB008B415E /* NestedCornerStyleExample.swift */,
-				CF03C8A327D956AA008B415E /* NotchedExample.swift */,
-				CF2FE30926C70DC30040A985 /* NotchedRectangleExample.swift */,
-				CF03C8A527D95748008B415E /* NotchedTriangleExample.swift */,
-				CF03C8A127D955E4008B415E /* NotchedPentagonExample.swift */,
+				CFCBC9712A181EED00C28E68 /* NotchedShapes */,
 				CFA165AB27B7044700C0EFDB /* InsetCornerShapeExample.swift */,
 				CF741BA528C298E800C59C65 /* InsettableShapeByPropertyExample.swift */,
 				CF6E1FA427B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift */,
@@ -166,6 +162,7 @@
 		CFB5482A27ECD2CF009B699A /* MessageBubble */ = {
 			isa = PBXGroup;
 			children = (
+				8A82F36B27F0FFD1005D0441 /* MessageBubbleExamples.swift */,
 				CFB5482B27ECD2E6009B699A /* MessageBubble0Example.swift */,
 				CFB5482227ECCA3B009B699A /* MessageBubble1Example.swift */,
 				CFB5482427ECCD29009B699A /* MessageBubble2Example.swift */,
@@ -175,6 +172,28 @@
 				CFA245F627ECFBA100953C2B /* MessageBubbleInsetExample.swift */,
 			);
 			path = MessageBubble;
+			sourceTree = "<group>";
+		};
+		CFCBC9702A181E2600C28E68 /* BasicShapes */ = {
+			isa = PBXGroup;
+			children = (
+				CF2FE30B26C7124B0040A985 /* BasicShapes.swift */,
+				CF2FE30526C706EE0040A985 /* CornerRectangleExample.swift */,
+				CF03C89D27D94E7C008B415E /* CornerTriangleExample.swift */,
+				CF03C89F27D9506E008B415E /* CornerPentagonExample.swift */,
+			);
+			path = BasicShapes;
+			sourceTree = "<group>";
+		};
+		CFCBC9712A181EED00C28E68 /* NotchedShapes */ = {
+			isa = PBXGroup;
+			children = (
+				CF03C8A327D956AA008B415E /* NotchedExample.swift */,
+				CF2FE30926C70DC30040A985 /* NotchedRectangleExample.swift */,
+				CF03C8A527D95748008B415E /* NotchedTriangleExample.swift */,
+				CF03C8A127D955E4008B415E /* NotchedPentagonExample.swift */,
+			);
+			path = NotchedShapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,7 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF03C8A427D956AA008B415E /* NotchedExample.swift in Sources */,
-				CF2FE30C26C7124B0040A985 /* ShapesExample.swift in Sources */,
+				CF2FE30C26C7124B0040A985 /* BasicShapes.swift in Sources */,
 				CF2FE30626C706EE0040A985 /* CornerRectangleExample.swift in Sources */,
 				CF2FE30E26C7145A0040A985 /* SketchyLineExample.swift in Sources */,
 				CF03C8A627D95748008B415E /* NotchedTriangleExample.swift in Sources */,
@@ -284,6 +303,7 @@
 				CFB5482327ECCA3B009B699A /* MessageBubble1Example.swift in Sources */,
 				CFA165AC27B7044700C0EFDB /* InsetCornerShapeExample.swift in Sources */,
 				CF2FE2F126C7061A0040A985 /* ShapeUpExampleApp.swift in Sources */,
+				CFCBC9752A18641A00C28E68 /* CornerStyleExample2.swift in Sources */,
 				CFD6965F26F431D4008D58AD /* EmbossExample.swift in Sources */,
 				CF03C8A827D957EB008B415E /* NestedCornerStyleExample.swift in Sources */,
 			);
@@ -423,8 +443,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abetterwaytodo.ShapeUpExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -445,8 +469,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abetterwaytodo.ShapeUpExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
