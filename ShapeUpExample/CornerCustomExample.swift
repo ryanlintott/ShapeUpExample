@@ -9,6 +9,8 @@ import ShapeUp
 import SwiftUI
 
 struct CornerCustomExample: View {
+    @State private var inset = 10.0
+    
     var body: some View {
         VStack {
             CornerCustom { rect in
@@ -21,8 +23,12 @@ struct CornerCustomExample: View {
                     Corner(x: rect.minX, y: rect.maxY)
                 ]
             }
+            .inset(by: inset)
                 .fill(Color.suPink)
                 .frame(width: 200, height: 150)
+                .animation(.default, value: inset)
+            
+            Stepper("Inset", value: $inset)
             
             Text("Closed Shape")
             

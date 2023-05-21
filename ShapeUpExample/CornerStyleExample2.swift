@@ -14,7 +14,7 @@ struct CornerStyleExample2: View {
     let radii: [RelatableValue] = [.absolute(.zero), .relative(.zero)]
     
     @State private var shape = "Rectangle"
-    @State private var style = CornerStyle.point
+    @State private var style = CornerStyle.rounded(radius: .zero)
     @State private var relativeRadius = true
     @State private var relative = 0.2
     @State private var absolute = 25.0
