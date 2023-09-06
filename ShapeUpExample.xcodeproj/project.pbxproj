@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -46,6 +46,7 @@
 		CFD47CCD27DA499600428F9B /* CornerStyleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD47CCC27DA499600428F9B /* CornerStyleExample.swift */; };
 		CFD47CCF27DA879900428F9B /* BasicCompareExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD47CCE27DA879900428F9B /* BasicCompareExample.swift */; };
 		CFD6965F26F431D4008D58AD /* EmbossExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6965E26F431D4008D58AD /* EmbossExample.swift */; };
+		CFF37C2B2AA90A0600052FE2 /* AnimatablePackExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF37C2A2AA90A0600052FE2 /* AnimatablePackExample.swift */; };
 		CFFEAF1127F269790086ECC5 /* HexagonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEAF1027F269790086ECC5 /* HexagonExample.swift */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		CFD47CCC27DA499600428F9B /* CornerStyleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerStyleExample.swift; sourceTree = "<group>"; };
 		CFD47CCE27DA879900428F9B /* BasicCompareExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCompareExample.swift; sourceTree = "<group>"; };
 		CFD6965E26F431D4008D58AD /* EmbossExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbossExample.swift; sourceTree = "<group>"; };
+		CFF37C2A2AA90A0600052FE2 /* AnimatablePackExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatablePackExample.swift; sourceTree = "<group>"; };
 		CFFEAF1027F269790086ECC5 /* HexagonExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 				CFD47CCE27DA879900428F9B /* BasicCompareExample.swift */,
 				CFB5482A27ECD2CF009B699A /* MessageBubble */,
 				CFD47CCA27DA431800428F9B /* CornerCustomExample.swift */,
+				CFF37C2A2AA90A0600052FE2 /* AnimatablePackExample.swift */,
 				CFCBC9702A181E2600C28E68 /* BasicShapes */,
 				CFFEAF1027F269790086ECC5 /* HexagonExample.swift */,
 				CF78EF5B27F500C200F67ED0 /* FoldButton.swift */,
@@ -304,6 +307,7 @@
 				CFCBC9792A1961AE00C28E68 /* CornerPentagonExample2.swift in Sources */,
 				CFD47CCD27DA499600428F9B /* CornerStyleExample.swift in Sources */,
 				CFA245F727ECFBA100953C2B /* MessageBubbleInsetExample.swift in Sources */,
+				CFF37C2B2AA90A0600052FE2 /* AnimatablePackExample.swift in Sources */,
 				CFFEAF1127F269790086ECC5 /* HexagonExample.swift in Sources */,
 				CF03C8A027D9506E008B415E /* CornerPentagonExample.swift in Sources */,
 				CF78EF5C27F500C200F67ED0 /* FoldButton.swift in Sources */,
@@ -380,6 +384,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = targeted;
 			};
 			name = Debug;
 		};
@@ -436,6 +441,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = targeted;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
