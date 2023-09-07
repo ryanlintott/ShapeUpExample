@@ -104,6 +104,7 @@ struct MessageBubbleExamples: View {
                             .padding()
                     )
                 }
+                .frame(maxWidth: 400)
                 .padding()
             }
             
