@@ -59,7 +59,6 @@
 		CF03C8A527D95748008B415E /* NotchedTriangleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchedTriangleExample.swift; sourceTree = "<group>"; };
 		CF03C8A727D957EB008B415E /* NestedCornerStyleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedCornerStyleExample.swift; sourceTree = "<group>"; };
 		CF0FB7F127D7DD6E00B9C775 /* Color+brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+brand.swift"; sourceTree = "<group>"; };
-		CF1B28FE2AA984DB006FC3D3 /* AnimatableArrayExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableArrayExample.swift; sourceTree = "<group>"; };
 		CF2FE2ED26C7061A0040A985 /* ShapeUpExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShapeUpExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2FE2F026C7061A0040A985 /* ShapeUpExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeUpExampleApp.swift; sourceTree = "<group>"; };
 		CF2FE2F226C7061A0040A985 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,7 +139,6 @@
 				CFB5482A27ECD2CF009B699A /* MessageBubble */,
 				CFD47CCA27DA431800428F9B /* CornerCustomExample.swift */,
 				CFF37C2A2AA90A0600052FE2 /* AnimatablePackExample.swift */,
-				CF1B28FE2AA984DB006FC3D3 /* AnimatableArrayExample.swift */,
 				CFCBC9702A181E2600C28E68 /* BasicShapes */,
 				CFFEAF1027F269790086ECC5 /* HexagonExample.swift */,
 				CF78EF5B27F500C200F67ED0 /* FoldButton.swift */,
