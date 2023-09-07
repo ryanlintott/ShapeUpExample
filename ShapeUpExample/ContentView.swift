@@ -73,7 +73,7 @@ struct ContentView: View {
                 Label("Emboss", systemImage: "rectangle.dashed")
             }
             
-            if #available(iOS 17, *) {
+            if #available(iOS 17, macOS 14, *) {
                 NavigationLink(destination: AnimatablePackExample()) {
                     Label("AnimatablePack", systemImage: "slider.horizontal.3")
                 }

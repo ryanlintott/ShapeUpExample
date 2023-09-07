@@ -8,7 +8,7 @@
 import ShapeUp
 import SwiftUI
 
-@available(iOS 17, *)
+@available(iOS 17, macOS 14, *)
 struct AnimatablePackShape: CornerShape, Animatable {
     var closed: Bool = true
     var insetAmount: CGFloat = 0
@@ -28,7 +28,7 @@ struct AnimatablePackShape: CornerShape, Animatable {
     }
 }
 
-@available(iOS 17, *)
+@available(iOS 17, macOS 14, *)
 struct AnimatablePackExample: View {
     @State private var insetAmount: Double = 0
     @State private var cornerRadius: Double = 40
@@ -60,9 +60,7 @@ struct AnimatablePackExample: View {
     }
 }
 
-
-
-@available(iOS 17, *)
+@available(iOS 17, macOS 14, *)
 struct AnimatablePackExample_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
