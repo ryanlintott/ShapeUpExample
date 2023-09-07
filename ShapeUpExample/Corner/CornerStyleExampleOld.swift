@@ -1,5 +1,5 @@
 //
-//  CornerStyleExample.swift
+//  CornerStyleExampleOld.swift
 //  ShapeUpExample
 //
 //  Created by Ryan Lintott on 2022-03-10.
@@ -8,7 +8,7 @@
 import ShapeUp
 import SwiftUI
 
-struct CornerStyleExample: View {
+struct CornerStyleExampleOld: View {
     let styles: [CornerStyle] = [
         .point,
         .rounded(radius: 25),
@@ -36,8 +36,8 @@ struct CornerStyleExample: View {
     }
 }
 
-struct CornerStyleExample_Previews: PreviewProvider {
+struct CornerStyleExampleOld_Previews: PreviewProvider {
     static var previews: some View {
-        CornerStyleExample()
+        CornerStyleExampleOld()
     }
 }

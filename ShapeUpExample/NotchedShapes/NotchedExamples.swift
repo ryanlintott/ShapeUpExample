@@ -1,5 +1,5 @@
 //
-//  NotchedExample.swift
+//  NotchedExamples.swift
 //  ShapeUpExample
 //
 //  Created by Ryan Lintott on 2022-03-09.
@@ -10,7 +10,7 @@ import SwiftUI
 import ShapeUp
 import SwiftUI
 
-struct NotchedExample: View {
+struct NotchedExamples: View {
     var body: some View {
         Section {
             NavigationLink(destination: NotchedRectangleExample()) {
@@ -30,8 +30,8 @@ struct NotchedExample: View {
     }
 }
 
-struct NotchedExample_Previews: PreviewProvider {
+struct NotchedExamples_Previews: PreviewProvider {
     static var previews: some View {
-        NotchedExample()
+        NotchedExamples()
     }
 }

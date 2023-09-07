@@ -48,11 +48,14 @@ struct CornerTriangleExample2: View {
             }
         }
         .padding()
+        .navigationTitle("CornerTriangle")
     }
 }
 
 struct CornerTriangleExample2_Previews: PreviewProvider {
     static var previews: some View {
-        CornerTriangleExample2()
+        NavigationView {
+            CornerTriangleExample2()
+        }
     }
 }
