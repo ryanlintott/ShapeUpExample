@@ -32,16 +32,20 @@ struct InsettableShapeByPropertyExample: View {
     @State private var inset: CGFloat = 10.0
     var body: some View {
         VStack {
+            VStack(alignment: .leading) {
+                Text("Turning a `Shape` into an `InsettableShape` can be cumbersome. In some cases it's possible to include the inset value as a parameter. The `InsettableShapeByProperty` protocol will generate the rest of the insetting code for you.")
+            }
+            
             Spacer()
             
             ZStack {
                 InsettableShapeWithHole()
-                    .stroke(lineWidth: 1)
-                    .fill(.blue)
+                    .fill(Color.suPurple)
                 
                 InsettableShapeWithHole()
                     .inset(by: inset)
                     .stroke(lineWidth: 5)
+                    .foregroundColor(.suPink)
             }
             .frame(width: 200, height: 200)
             
@@ -51,12 +55,15 @@ struct InsettableShapeByPropertyExample: View {
                 Text("Inset")
                 Slider(value: $inset, in: -20...20)
             }
-            .padding()
         }
+        .padding()
+        .navigationTitle("InsetByProperty")
     }
 }
 struct InsettableShapeByPropertyExample_Previews: PreviewProvider {
     static var previews: some View {
-        InsettableShapeByPropertyExample()
+        NavigationView {
+            InsettableShapeByPropertyExample()
+        }
     }
 }

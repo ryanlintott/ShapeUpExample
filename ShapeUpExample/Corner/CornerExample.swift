@@ -1,5 +1,5 @@
 //
-//  CornerStyleExample2.swift
+//  CornerExample.swift
 //  ShapeUpExample
 //
 //  Created by Ryan Lintott on 2023-05-19.
@@ -8,7 +8,7 @@
 import ShapeUp
 import SwiftUI
 
-struct CornerStyleExample2: View {
+struct CornerExample: View {
     let shapes = ["Rectangle", "Triangle", "Pentagon"]
     let styles: [CornerStyle] = [.point, .rounded(radius: .zero), .concave(radius: .zero), .straight(radius: .zero), .cutout(radius: .zero)]
     let radii: [RelatableValue] = [.absolute(.zero), .relative(.zero)]
@@ -25,6 +25,10 @@ struct CornerStyleExample2: View {
     
     var body: some View {
         VStack {
+            VStack(alignment: .leading) {
+                Text("Make shapes using `Corner`, pick a `style` and set the `radius` using either `absolute` or `relative` values.")
+            }
+            
             Color.clear.overlay(
                 Group {
                     switch shape {
@@ -58,42 +62,53 @@ struct CornerStyleExample2: View {
             .pickerStyle(.segmented)
             
             Group {
-                Toggle("Relative Radius", isOn: $relativeRadius)
+                Section {
+                    Picker("Radius", selection: $relativeRadius) {
+                        Text("Relative").tag(true)
+                        Text("Absolute").tag(false)
+                    }
+                    .pickerStyle(.segmented)
+                } header: {
+                    if relativeRadius {
+                        Stepper("Radius: .relative(\(String(format: "%.2F", relative)))", value: $relative, in: 0...1, step: 0.1)
+                    } else {
+                        Stepper("Radius: .absolute(\(String(format: "%.0F", absolute)))", value: $absolute, in: 0...300, step: 10)
+                        
+                    }
+                }
+
+                
                 
                 if relativeRadius {
-                    Slider(value: $relative, in: 0...1) {
+                    Slider(value: $relative, in: 0...0.5) {
                         Text("Relative Value")
                     } minimumValueLabel: {
                         Text("0")
                     } maximumValueLabel: {
-                        Text("1")
+                        Text("0.5")
                     }
-                    
-                    Stepper("Relative Value \(relative)", value: $relative, in: 0...1, step: 0.1)
                 } else {
-                    Slider(value: $absolute, in: 0...300) {
+                    Slider(value: $absolute, in: 0...150) {
                         Text("Absolute Value")
                     } minimumValueLabel: {
                         Text("0")
                     } maximumValueLabel: {
-                        Text("300")
+                        Text("150")
                     }
-                    
-                    Stepper("Absolute Value \(String(format: "%.0F", absolute))", value: $absolute, in: 0...300, step: 10)
                 }
             }
             .disabled(style == .point)
 
         }
         .padding()
-        .navigationTitle("CornerStyle")
+        .navigationTitle("Corner")
     }
 }
 
-struct CornerStyleExample2_Previews: PreviewProvider {
+struct CornerExample_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            CornerStyleExample2()
+            CornerExample()
         }
     }
 }

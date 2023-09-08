@@ -15,11 +15,11 @@ struct BasicShapes: View {
                 Label("CornerRectangle", systemImage: "rectangle")
             }
             
-            NavigationLink(destination: CornerTriangleExample()) {
+            NavigationLink(destination: CornerTriangleExample2()) {
                 Label("CornerTriangle", systemImage: "triangle")
             }
             
-            NavigationLink(destination: CornerPentagonExample()) {
+            NavigationLink(destination: CornerPentagonExample2()) {
                 Label("CornerPentagon", systemImage: "pentagon")
             }
         } header: {

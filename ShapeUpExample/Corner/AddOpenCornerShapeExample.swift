@@ -47,18 +47,29 @@ struct OpenCornerShape: Shape {
 struct AddOpenCornerShapeExample: View {
     var body: some View {
         VStack {
+            VStack(alignment: .leading) {
+                Text("`CornerShape` does not currently support curves but you can always use an array of `Corner` to draw a part of your path.")
+                
+                Text("Below is a SwiftUI `Shape` but some of the difficult corner details were added with `path.addOpenCornerShape()`")
+            }
+            
+            Spacer()
+            
             OpenCornerShape()
                 .stroke(Color.suPink, lineWidth: 10)
                 .frame(width: 200, height: 200)
-                .navigationTitle("AddOpenCornerShape")
             
-            Text("Regular SwiftUI Path with some Corners")
+            Spacer()
         }
+        .padding()
+        .navigationTitle("AddOpenCornerShape")
     }
 }
 
 struct AddOpenCornerShapeExample_Previews: PreviewProvider {
     static var previews: some View {
-        AddOpenCornerShapeExample()
+        NavigationView {
+            AddOpenCornerShapeExample()
+        }
     }
 }

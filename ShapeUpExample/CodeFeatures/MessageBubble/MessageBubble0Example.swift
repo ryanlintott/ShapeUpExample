@@ -9,9 +9,6 @@ import ShapeUp
 import SwiftUI
 
 struct MessageBubble0: Shape {
-    var closed: Bool = true
-    var insetAmount: CGFloat = 0
-    
     let cornerRadius: CGFloat
     let pointSize: CGFloat
     let pointRadius: CGFloat

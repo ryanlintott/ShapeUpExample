@@ -41,11 +41,14 @@ struct CornerPentagonExample2: View {
             Stepper("Inset \(String(format: "%.0F", inset))", value: $inset, in: -30...30, step: 10)
         }
         .padding()
+        .navigationTitle("CornerPentagon")
     }
 }
 
 struct CornerPentagonExample2_Previews: PreviewProvider {
     static var previews: some View {
-        CornerPentagonExample2()
+        NavigationView {
+            CornerPentagonExample2()
+        }
     }
 }

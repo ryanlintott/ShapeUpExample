@@ -19,12 +19,8 @@ struct ContentView: View {
     @ViewBuilder
     var examples: some View {
         Section {
-            NavigationLink(destination: BasicCompareExample()) {
-                Label("Basic Comparison", systemImage: "rectangle.grid.1x2")
-            }
-            
-            NavigationLink(destination: CornerStyleExample()) {
-                Label("CornerStyle", systemImage: "arrow.up.forward.app")
+            NavigationLink(destination: CornerExample()) {
+                Label("Corner", systemImage: "arrow.up.forward.app")
             }
             
             NavigationLink(destination: CornerShapeExample()) {
@@ -34,8 +30,18 @@ struct ContentView: View {
             NavigationLink(destination: CornerCustomExample()) {
                 Label("CornerCustom", systemImage: "skew")
             }
+            
+            NavigationLink(destination: NestedCornerStyleExample()) {
+                Label("Nested CornerStyle", systemImage: "seal")
+            }
+            
+            NavigationLink(destination: AddOpenCornerShapeExample()) {
+                Label("AddOpenCornerShape", systemImage: "scribble")
+            }
+            
+            
         } header: {
-            Text("CornerShape")
+            Text("Corner")
         }
         
         BasicShapes()
@@ -45,47 +51,49 @@ struct ContentView: View {
                 Label("ShapeUp Logo", systemImage: "arrowtriangle.up")
             }
             
-            NavigationLink(destination: NestedCornerStyleExample()) {
-                Label("Nested CornerStyle", systemImage: "seal")
-            }
-            
             NavigationLink(destination: InsetCornerShapeExample()) {
                 Label("InsetCornerShape", systemImage: "rectangle.inset.filled")
-            }
-            
-            NavigationLink(destination: AddOpenCornerShapeExample()) {
-                Label("AddOpenCornerShape", systemImage: "scribble")
             }
         } header: {
             Text("Custom Shapes")
         }
         
-        NotchedExample()
-
-        MessageBubbleExamples()
+        NotchedExamples()
         
         Section {
             NavigationLink(destination: InsettableShapeByPropertyExample()) {
-                Label("InsetByProperty", systemImage: "circle.inset.filled")
+                Label("InsetByProperty", systemImage: "triangle.inset.filled")
             }
-        } header: {
-            Text("InsettableShapeByProperty")
-        }
-        
-        Section {
+            
             NavigationLink(destination: SketchyLineExample()) {
                 Label("SketchyLine", systemImage: "highlighter")
             }
-        } header: {
-            Text("SketchyLine")
-        }
-        
-        Section {
+            
             NavigationLink(destination: EmbossExample()) {
                 Label("Emboss", systemImage: "rectangle.dashed")
             }
+            
+            #if swift(>=5.9)
+            if #available(iOS 17, macOS 14, *) {
+                NavigationLink(destination: AnimatablePackExample()) {
+                    Label("AnimatablePack", systemImage: "slider.horizontal.3")
+                }
+            }
+            #endif
         } header: {
-            Text("Emboss")
+            Text("Other Tools")
+        }
+        
+        Section {
+            NavigationLink(destination: BasicCompareExample()) {
+                Label("Code Comparison", systemImage: "rectangle.grid.1x2")
+            }
+            
+            NavigationLink(destination: MessageBubbleExamples()) {
+                Label("Drawing Methods", systemImage: "rectangle.inset.filled")
+            }
+        } header: {
+            Text("Code Features")
         }
     }
     

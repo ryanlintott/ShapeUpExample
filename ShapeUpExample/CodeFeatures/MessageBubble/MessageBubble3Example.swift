@@ -39,16 +39,6 @@ struct MessageBubble3Example: View {
                 .fill(Color.suPurple)
                 .frame(width: 200, height: 120)
                 .animation(.spring(), value: cornerRadius)
-            
-            Button("5") {
-                cornerRadius = 5
-            }
-            Button("20") {
-                cornerRadius = 20
-            }
-            Button("50") {
-                cornerRadius = 50
-            }
         }
     }
 }
