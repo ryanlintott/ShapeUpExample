@@ -47,10 +47,11 @@ struct CornerShapeExample: View {
     var body: some View {
         VStack {
             VStack(alignment: .leading) {
-                Text("A `CornerShape` has a `closed` property and an `insetAmount` and the function")
+                Text("Create any array of `Corner` using")
                 Text("`corners(in: CGRect) -> [Corner]`").padding(.vertical, 4)
                 Text("instead of the `Shape` function")
                 Text("`path(in: CGRect) -> Path`").padding(.vertical, 4)
+                Text("to make a `CornerShape` that can be open or closed and is insettable automatically!")
             }
             Spacer()
             

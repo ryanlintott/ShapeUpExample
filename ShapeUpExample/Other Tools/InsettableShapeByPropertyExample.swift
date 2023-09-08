@@ -40,12 +40,12 @@ struct InsettableShapeByPropertyExample: View {
             
             ZStack {
                 InsettableShapeWithHole()
-                    .stroke(lineWidth: 1)
-                    .fill(.blue)
+                    .fill(Color.suPurple)
                 
                 InsettableShapeWithHole()
                     .inset(by: inset)
                     .stroke(lineWidth: 5)
+                    .foregroundColor(.suPink)
             }
             .frame(width: 200, height: 200)
             

@@ -5,6 +5,7 @@
 //  Created by Ryan Lintott on 2023-09-06.
 //
 
+#if swift(>=5.9)
 import ShapeUp
 import SwiftUI
 
@@ -45,7 +46,7 @@ struct AnimatablePackExample: View {
                 cornerRadius: .absolute(cornerRadius),
                 rotation: .degrees(rotation)
             )
-            .fill(.blue)
+            .fill(Color.suPink)
             .padding()
             .animation(.easeInOut.speed(0.2), value: insetAmount)
             .animation(.easeInOut.speed(0.2), value: cornerRadius)
@@ -68,3 +69,4 @@ struct AnimatablePackExample_Previews: PreviewProvider {
         }
     }
 }
+#endif
