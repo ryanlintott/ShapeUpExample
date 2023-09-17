@@ -38,6 +38,7 @@
 		CFB5482727ECCEAB009B699A /* MessageBubble3Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB5482627ECCEAB009B699A /* MessageBubble3Example.swift */; };
 		CFB5482927ECD217009B699A /* MessageBubble4Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB5482827ECD217009B699A /* MessageBubble4Example.swift */; };
 		CFB5482C27ECD2E6009B699A /* MessageBubble0Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB5482B27ECD2E6009B699A /* MessageBubble0Example.swift */; };
+		CFB65EB92AB78673006167EA /* AnimatablePackExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF37C2A2AA90A0600052FE2 /* AnimatablePackExample.swift */; };
 		CFCBC9752A18641A00C28E68 /* CornerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCBC9742A18641A00C28E68 /* CornerExample.swift */; };
 		CFCBC9772A19236E00C28E68 /* CornerTriangleExample2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCBC9762A19236E00C28E68 /* CornerTriangleExample2.swift */; };
 		CFCBC9792A1961AE00C28E68 /* CornerPentagonExample2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCBC9782A1961AE00C28E68 /* CornerPentagonExample2.swift */; };
@@ -45,7 +46,6 @@
 		CFD47CCD27DA499600428F9B /* CornerStyleExampleOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD47CCC27DA499600428F9B /* CornerStyleExampleOld.swift */; };
 		CFD47CCF27DA879900428F9B /* BasicCompareExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD47CCE27DA879900428F9B /* BasicCompareExample.swift */; };
 		CFD6965F26F431D4008D58AD /* EmbossExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6965E26F431D4008D58AD /* EmbossExample.swift */; };
-		CFF37C2B2AA90A0600052FE2 /* AnimatablePackExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF37C2A2AA90A0600052FE2 /* AnimatablePackExample.swift */; };
 		CFFEAF1127F269790086ECC5 /* HexagonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEAF1027F269790086ECC5 /* HexagonExample.swift */; };
 /* End PBXBuildFile section */
 
@@ -312,6 +312,7 @@
 			files = (
 				CF03C8A427D956AA008B415E /* NotchedExamples.swift in Sources */,
 				CF2FE30C26C7124B0040A985 /* BasicShapes.swift in Sources */,
+				CFB65EB92AB78673006167EA /* AnimatablePackExample.swift in Sources */,
 				CF2FE30626C706EE0040A985 /* CornerRectangleExample.swift in Sources */,
 				CF2FE30E26C7145A0040A985 /* SketchyLineExample.swift in Sources */,
 				CFCBC9772A19236E00C28E68 /* CornerTriangleExample2.swift in Sources */,
@@ -336,7 +337,6 @@
 				CFCBC9792A1961AE00C28E68 /* CornerPentagonExample2.swift in Sources */,
 				CFD47CCD27DA499600428F9B /* CornerStyleExampleOld.swift in Sources */,
 				CFA245F727ECFBA100953C2B /* MessageBubbleInsetExample.swift in Sources */,
-				CFF37C2B2AA90A0600052FE2 /* AnimatablePackExample.swift in Sources */,
 				CFFEAF1127F269790086ECC5 /* HexagonExample.swift in Sources */,
 				CF03C8A027D9506E008B415E /* CornerPentagonExample.swift in Sources */,
 				CF78EF5C27F500C200F67ED0 /* FoldButton.swift in Sources */,
