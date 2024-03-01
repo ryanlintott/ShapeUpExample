@@ -31,14 +31,40 @@ struct CornerPentagonExample2: View {
                 .animation(.default, value: inset)
             )
             
+            CrossPlatformStepper(
+                label: "Point Height",
+                value: $pointHeight,
+                minValue: 0,
+                maxValue: 1,
+                step: 0.1,
+                decimalPlaces: 1
+            )
             
-            Stepper("Point Height \(String(format: "%.1F", pointHeight))", value: $pointHeight, in: 0...1, step: 0.1)
+            CrossPlatformStepper(
+                label: "Top Taper",
+                value: $topTaper,
+                minValue: 0,
+                maxValue: 1,
+                step: 0.1,
+                decimalPlaces: 1
+            )
             
-            Stepper("Top Taper \(String(format: "%.1F", topTaper))", value: $topTaper, in: 0...1, step: 0.1)
+            CrossPlatformStepper(
+                label: "Bottom Taper",
+                value: $bottomTaper,
+                minValue: 0,
+                maxValue: 1,
+                step: 0.1,
+                decimalPlaces: 1
+            )
             
-            Stepper("Bottom Taper \(String(format: "%.1F", bottomTaper))", value: $bottomTaper, in: 0...1, step: 0.1)
-            
-            Stepper("Inset \(String(format: "%.0F", inset))", value: $inset, in: -30...30, step: 10)
+            CrossPlatformStepper(
+                label: "Inset",
+                value: $inset,
+                minValue: -30,
+                maxValue: 30,
+                step: 10
+            )
         }
         .padding()
         .navigationTitle("CornerPentagon")

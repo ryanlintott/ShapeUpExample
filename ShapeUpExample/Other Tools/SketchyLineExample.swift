@@ -53,13 +53,14 @@ struct SketchyLineExample: View {
             
             Spacer()
             
-            Slider(value: $drawAmount, in: 0...1) {
-                Text("Draw Amount")
-            } minimumValueLabel: {
-                Text("Draw Amount")
-            } maximumValueLabel: {
-                Text("")
-            }
+            CrossPlatformSlider(
+                label: "Draw Amount",
+                value: $drawAmount,
+                minValue: 0,
+                maxValue: 1,
+                step: 0.1,
+                labelPrefix: true
+            )
         }
         .padding()
         .navigationTitle("SketchyLine")

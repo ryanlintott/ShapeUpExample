@@ -85,13 +85,14 @@ struct CornerShapeExample: View {
             }
             .pickerStyle(.segmented)
             
-            Slider(value: $insetAmount, in: -30...30) {
-                Text("Inset Amount")
-            } minimumValueLabel: {
-                Text("Inset Amount: -30")
-            } maximumValueLabel: {
-                Text("30")
-            }
+            CrossPlatformSlider(
+                label: "Inset Amount",
+                value: $insetAmount,
+                minValue: -30,
+                maxValue: 30,
+                step: 5,
+                labelPrefix: true
+            )
         }
         .padding()
         .navigationTitle("CornerShape")

@@ -32,7 +32,13 @@ struct HexagonExample: View {
             Button("0.6") {
                 leftInset = 0.6
             }
-            Slider(value: $leftInset, in: 0...1)
+            CrossPlatformSlider(
+                label: "Left Inset",
+                value: $leftInset,
+                minValue: 0,
+                maxValue: 1,
+                step: 0.1
+            )
         }
     }
 }

@@ -70,15 +70,27 @@ struct CornerExample: View {
                     .pickerStyle(.segmented)
                 } header: {
                     if relativeRadius {
-                        Stepper("Radius: .relative(\(String(format: "%.2F", relative)))", value: $relative, in: 0...1, step: 0.1)
+                        CrossPlatformStepper(
+                            label: "Radius",
+                            value: $relative,
+                            minValue: 0,
+                            maxValue: 1,
+                            step: 0.1,
+                            decimalPlaces: 1
+                        )
                     } else {
-                        Stepper("Radius: .absolute(\(String(format: "%.0F", absolute)))", value: $absolute, in: 0...300, step: 10)
-                        
+                        CrossPlatformStepper(
+                            label: "Radius",
+                            value: $absolute,
+                            minValue: 0,
+                            maxValue: 300,
+                            step: 10,
+                            decimalPlaces: 0
+                        )
                     }
                 }
-
                 
-                
+                #if !os(tvOS)
                 if relativeRadius {
                     Slider(value: $relative, in: 0...0.5) {
                         Text("Relative Value")
@@ -96,6 +108,7 @@ struct CornerExample: View {
                         Text("150")
                     }
                 }
+                #endif
             }
             .disabled(style == .point)
 

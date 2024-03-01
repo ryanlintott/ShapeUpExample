@@ -79,7 +79,7 @@ struct ContentView: View {
             /// https://forums.swift.org/t/pitch-enable-pack-iteration/66168
 //            #if swift(>=5.9)
             #if swift(>=999)
-            if #available(iOS 17, macOS 14, *) {
+            if #available(iOS 17, macOS 14, watchOS 10, tvOS 17, *) {
                 NavigationLink(destination: AnimatablePackExample()) {
                     Label("AnimatablePack", systemImage: "slider.horizontal.3")
                 }
@@ -105,7 +105,7 @@ struct ContentView: View {
     let title = "ShapeUp"
     
     var body: some View {
-        #if os(iOS)
+        #if os(iOS) || os(tvOS)
         NavigationView {
             VStack {
                 logo

@@ -25,10 +25,16 @@ struct CornerTriangleExample2: View {
                 .animation(.default, value: topPoint)
                 .animation(.default, value: inset)
             )
-
             
-            Stepper("Top Point \(String(format: "%.1F", topPoint))", value: $topPoint, in: 0...1, step: 0.1)
+            CrossPlatformStepper(
+                label: "Top Point",
+                value: $topPoint,
+                minValue: 0,
+                maxValue: 1,
+                step: 0.1
+            )
             
+            #if !os(tvOS)
             Slider(value: $topPoint, in: 0...1) {
                 Text("Top Point")
             } minimumValueLabel: {
@@ -36,9 +42,17 @@ struct CornerTriangleExample2: View {
             } maximumValueLabel: {
                 Text("1")
             }
+            #endif
             
-            Stepper("Inset \(String(format: "%.0F", inset))", value: $inset, in: -30...30, step: 10)
+            CrossPlatformStepper(
+                label: "Inset",
+                value: $inset,
+                minValue: -30,
+                maxValue: 30,
+                step: 10
+            )
             
+            #if !os(tvOS)
             Slider(value: $inset, in: -30...30) {
                 Text("Inset")
             } minimumValueLabel: {
@@ -46,6 +60,7 @@ struct CornerTriangleExample2: View {
             } maximumValueLabel: {
                 Text("30")
             }
+            #endif
         }
         .padding()
         .navigationTitle("CornerTriangle")

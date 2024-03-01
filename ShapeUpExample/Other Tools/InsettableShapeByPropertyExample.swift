@@ -51,10 +51,14 @@ struct InsettableShapeByPropertyExample: View {
             
             Spacer()
             
-            HStack {
-                Text("Inset")
-                Slider(value: $inset, in: -20...20)
-            }
+            CrossPlatformSlider(
+                label: "Inset",
+                value: $inset,
+                minValue: -20,
+                maxValue: 20,
+                step: 5,
+                labelPrefix: true
+            )
         }
         .padding()
         .navigationTitle("InsetByProperty")

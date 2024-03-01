@@ -53,9 +53,29 @@ struct AnimatablePackExample: View {
             .animation(.easeInOut.speed(0.2), value: cornerRadius)
             .animation(.easeInOut.speed(0.2), value: rotation)
         
-            Stepper("Inset Amount \(String(format: "%.2F", insetAmount))", value: $insetAmount, in: 0...200, step: 10)
-            Stepper("Corner Radius \(String(format: "%.2F", cornerRadius))", value: $cornerRadius, in: 0...200, step: 20)
-            Stepper("Rotation Angle \(String(format: "%.2F", rotation))", value: $rotation, in: -720...720, step: 45)
+            CrossPlatformStepper(
+                label: "Inset",
+                value: $inset,
+                minValue: -30,
+                maxValue: 30,
+                step: 10
+            )
+            
+            CrossPlatformStepper(
+                label: "Corner Radius",
+                value: $cornerRadius,
+                minValue: 0,
+                maxValue: 200,
+                step: 20
+            )
+            
+            CrossPlatformStepper(
+                label: "Rotation Angle",
+                value: $cornerRadius,
+                minValue: -720,
+                maxValue: 720,
+                step: 45
+            )
         }
         .padding()
         .navigationTitle("AnimatablePack")

@@ -108,37 +108,41 @@ struct MessageBubbleExamples: View {
                 .padding()
             }
             
-            Slider(value: $cornerRadius, in: 0...80) {
-                Text("Corner Radius")
-            } minimumValueLabel: {
-                Text("Corner Radius")
-            } maximumValueLabel: {
-                Text("")
-            }
+            CrossPlatformSlider(
+                label: "Corner Radius",
+                value: $cornerRadius,
+                minValue: 0,
+                maxValue: 80,
+                step: 10,
+                labelPrefix: true
+            )
             
-            Slider(value: $pointSize, in: 0...50) {
-                Text("Point Size")
-            } minimumValueLabel: {
-                Text("Point Size")
-            } maximumValueLabel: {
-                Text("")
-            }
+            CrossPlatformSlider(
+                label: "Point Size",
+                value: $pointSize,
+                minValue: 0,
+                maxValue: 50,
+                step: 10,
+                labelPrefix: true
+            )
             
-            Slider(value: $pointRadius, in: 0...40) {
-                Text("Point Radius")
-            } minimumValueLabel: {
-                Text("Point Radius")
-            } maximumValueLabel: {
-                Text("")
-            }
+            CrossPlatformSlider(
+                label: "Point Radius",
+                value: $pointRadius,
+                minValue: 0,
+                maxValue: 40,
+                step: 10,
+                labelPrefix: true
+            )
             
-            Slider(value: $insetAmount, in: -10...10) {
-                Text("Inset Amount")
-            } minimumValueLabel: {
-                Text("Inset Amount")
-            } maximumValueLabel: {
-                Text("")
-            }
+            CrossPlatformSlider(
+                label: "Inset",
+                value: $insetAmount,
+                minValue: -10,
+                maxValue: 10,
+                step: 2,
+                labelPrefix: true
+            )
         }
         .padding()
         .navigationTitle("Drawing Methods")

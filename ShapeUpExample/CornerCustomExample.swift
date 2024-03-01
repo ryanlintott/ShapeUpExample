@@ -28,7 +28,13 @@ struct CornerCustomExample: View {
                 .frame(width: 200, height: 150)
                 .animation(.default, value: inset)
             
-            Stepper("Inset", value: $inset)
+            CrossPlatformStepper(
+                label: "Inset",
+                value: $inset,
+                minValue: -30,
+                maxValue: 30,
+                step: 10
+            )
             
             Text("Closed Shape")
             
