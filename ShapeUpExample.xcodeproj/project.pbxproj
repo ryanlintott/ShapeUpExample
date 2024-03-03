@@ -43,7 +43,6 @@
 		CF765EAC2B93C91A003E3FBE /* CrossPlatformStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF765E712B914BF2003E3FBE /* CrossPlatformStepper.swift */; };
 		CF765EAD2B93C935003E3FBE /* CrossPlatformSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF765E6F2B913AD5003E3FBE /* CrossPlatformSlider.swift */; };
 		CF765EAE2B93C95A003E3FBE /* HexagonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEAF1027F269790086ECC5 /* HexagonExample.swift */; };
-		CF765EAF2B942ECC003E3FBE /* Color+brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB7F127D7DD6E00B9C775 /* Color+brand.swift */; };
 		CF78EF5C27F500C200F67ED0 /* FoldButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF78EF5B27F500C200F67ED0 /* FoldButton.swift */; };
 		CFA165AC27B7044700C0EFDB /* InsetCornerShapeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA165AB27B7044700C0EFDB /* InsetCornerShapeExample.swift */; };
 		CFA245F727ECFBA100953C2B /* MessageBubbleInsetExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA245F627ECFBA100953C2B /* MessageBubbleInsetExample.swift */; };
@@ -97,7 +96,6 @@
 		CF03C8A327D956AA008B415E /* NotchedExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchedExamples.swift; sourceTree = "<group>"; };
 		CF03C8A527D95748008B415E /* NotchedTriangleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchedTriangleExample.swift; sourceTree = "<group>"; };
 		CF03C8A727D957EB008B415E /* NestedCornerStyleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedCornerStyleExample.swift; sourceTree = "<group>"; };
-		CF0FB7F127D7DD6E00B9C775 /* Color+brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+brand.swift"; sourceTree = "<group>"; };
 		CF2FE2ED26C7061A0040A985 /* ShapeUpExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShapeUpExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2FE2F026C7061A0040A985 /* ShapeUpExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeUpExampleApp.swift; sourceTree = "<group>"; };
 		CF2FE2F226C7061A0040A985 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -230,7 +228,6 @@
 			children = (
 				CF2FE2F026C7061A0040A985 /* ShapeUpExampleApp.swift */,
 				CF2FE2F226C7061A0040A985 /* ContentView.swift */,
-				CF0FB7F127D7DD6E00B9C775 /* Color+brand.swift */,
 				CF1B29012AAA3072006FC3D3 /* Corner */,
 				CFCBC9702A181E2600C28E68 /* BasicShapes */,
 				CFD47CCA27DA431800428F9B /* CornerCustomExample.swift */,
@@ -383,7 +380,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					CF2FE2EC26C7061A0040A985 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -481,7 +478,6 @@
 				CFCBC9752A18641A00C28E68 /* CornerExample.swift in Sources */,
 				CFD6965F26F431D4008D58AD /* EmbossExample.swift in Sources */,
 				CF03C8A827D957EB008B415E /* NestedCornerStyleExample.swift in Sources */,
-				CF765EAF2B942ECC003E3FBE /* Color+brand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +512,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -581,6 +578,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
