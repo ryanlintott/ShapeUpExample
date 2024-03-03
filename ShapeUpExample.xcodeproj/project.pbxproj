@@ -14,7 +14,6 @@
 		CF03C8A427D956AA008B415E /* NotchedExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03C8A327D956AA008B415E /* NotchedExamples.swift */; };
 		CF03C8A627D95748008B415E /* NotchedTriangleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03C8A527D95748008B415E /* NotchedTriangleExample.swift */; };
 		CF03C8A827D957EB008B415E /* NestedCornerStyleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03C8A727D957EB008B415E /* NestedCornerStyleExample.swift */; };
-		CF0FB7F227D7DD6E00B9C775 /* Color+brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB7F127D7DD6E00B9C775 /* Color+brand.swift */; };
 		CF2FE2F126C7061A0040A985 /* ShapeUpExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE2F026C7061A0040A985 /* ShapeUpExampleApp.swift */; };
 		CF2FE2F326C7061A0040A985 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE2F226C7061A0040A985 /* ContentView.swift */; };
 		CF2FE2F526C7061C0040A985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2FE2F426C7061C0040A985 /* Assets.xcassets */; };
@@ -30,6 +29,21 @@
 		CF741BA628C298E800C59C65 /* InsettableShapeByPropertyExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF741BA528C298E800C59C65 /* InsettableShapeByPropertyExample.swift */; };
 		CF765E702B913AD5003E3FBE /* CrossPlatformSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF765E6F2B913AD5003E3FBE /* CrossPlatformSlider.swift */; };
 		CF765E722B914BF2003E3FBE /* CrossPlatformStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF765E712B914BF2003E3FBE /* CrossPlatformStepper.swift */; };
+		CF765E932B93C550003E3FBE /* WatchShapeUpExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF765E922B93C550003E3FBE /* WatchShapeUpExampleApp.swift */; };
+		CF765E952B93C550003E3FBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF765E942B93C550003E3FBE /* ContentView.swift */; };
+		CF765E972B93C551003E3FBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF765E962B93C551003E3FBE /* Assets.xcassets */; };
+		CF765E9A2B93C551003E3FBE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF765E992B93C551003E3FBE /* Preview Assets.xcassets */; };
+		CF765E9D2B93C551003E3FBE /* WatchShapeUpExample.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CF765E902B93C550003E3FBE /* WatchShapeUpExample.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CF765EA32B93C745003E3FBE /* ShapeUp in Frameworks */ = {isa = PBXBuildFile; productRef = CF765EA22B93C745003E3FBE /* ShapeUp */; };
+		CF765EA52B93C7CF003E3FBE /* ShapeUpLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30326C706AD0040A985 /* ShapeUpLogoView.swift */; };
+		CF765EA72B93C83A003E3FBE /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF765EA62B93C83A003E3FBE /* SharedAssets.xcassets */; };
+		CF765EA82B93C83D003E3FBE /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF765EA62B93C83A003E3FBE /* SharedAssets.xcassets */; };
+		CF765EA92B93C903003E3FBE /* InsetCornerShapeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA165AB27B7044700C0EFDB /* InsetCornerShapeExample.swift */; };
+		CF765EAA2B93C90A003E3FBE /* FoldButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF78EF5B27F500C200F67ED0 /* FoldButton.swift */; };
+		CF765EAC2B93C91A003E3FBE /* CrossPlatformStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF765E712B914BF2003E3FBE /* CrossPlatformStepper.swift */; };
+		CF765EAD2B93C935003E3FBE /* CrossPlatformSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF765E6F2B913AD5003E3FBE /* CrossPlatformSlider.swift */; };
+		CF765EAE2B93C95A003E3FBE /* HexagonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEAF1027F269790086ECC5 /* HexagonExample.swift */; };
+		CF765EAF2B942ECC003E3FBE /* Color+brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB7F127D7DD6E00B9C775 /* Color+brand.swift */; };
 		CF78EF5C27F500C200F67ED0 /* FoldButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF78EF5B27F500C200F67ED0 /* FoldButton.swift */; };
 		CFA165AC27B7044700C0EFDB /* InsetCornerShapeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA165AB27B7044700C0EFDB /* InsetCornerShapeExample.swift */; };
 		CFA245F727ECFBA100953C2B /* MessageBubbleInsetExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA245F627ECFBA100953C2B /* MessageBubbleInsetExample.swift */; };
@@ -50,6 +64,30 @@
 		CFD6965F26F431D4008D58AD /* EmbossExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6965E26F431D4008D58AD /* EmbossExample.swift */; };
 		CFFEAF1127F269790086ECC5 /* HexagonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEAF1027F269790086ECC5 /* HexagonExample.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF765E9B2B93C551003E3FBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF2FE2E526C7061A0040A985 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF765E8F2B93C550003E3FBE;
+			remoteInfo = "WatchShapeUpExample Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF765E9E2B93C551003E3FBE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CF765E9D2B93C551003E3FBE /* WatchShapeUpExample.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8A82F36B27F0FFD1005D0441 /* MessageBubbleExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleExamples.swift; sourceTree = "<group>"; };
@@ -76,6 +114,12 @@
 		CF741BA528C298E800C59C65 /* InsettableShapeByPropertyExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsettableShapeByPropertyExample.swift; sourceTree = "<group>"; };
 		CF765E6F2B913AD5003E3FBE /* CrossPlatformSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatformSlider.swift; sourceTree = "<group>"; };
 		CF765E712B914BF2003E3FBE /* CrossPlatformStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatformStepper.swift; sourceTree = "<group>"; };
+		CF765E902B93C550003E3FBE /* WatchShapeUpExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchShapeUpExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF765E922B93C550003E3FBE /* WatchShapeUpExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchShapeUpExampleApp.swift; sourceTree = "<group>"; };
+		CF765E942B93C550003E3FBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CF765E962B93C551003E3FBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF765E992B93C551003E3FBE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF765EA62B93C83A003E3FBE /* SharedAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SharedAssets.xcassets; sourceTree = "<group>"; };
 		CF78EF5B27F500C200F67ED0 /* FoldButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldButton.swift; sourceTree = "<group>"; };
 		CF91518D27C8189100328D30 /* ShapeUp */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ShapeUp; path = ../ShapeUp; sourceTree = "<group>"; };
 		CFA165AB27B7044700C0EFDB /* InsetCornerShapeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetCornerShapeExample.swift; sourceTree = "<group>"; };
@@ -104,6 +148,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF2FE30126C7063D0040A985 /* ShapeUp in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF765E8D2B93C550003E3FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF765EA32B93C745003E3FBE /* ShapeUp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +209,9 @@
 			isa = PBXGroup;
 			children = (
 				CF91518D27C8189100328D30 /* ShapeUp */,
+				CF765EA42B93C7B0003E3FBE /* Shared */,
 				CF2FE2EF26C7061A0040A985 /* ShapeUpExample */,
+				CF765E912B93C550003E3FBE /* WatchShapeUpExample */,
 				CF2FE2EE26C7061A0040A985 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -166,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				CF2FE2ED26C7061A0040A985 /* ShapeUpExample.app */,
+				CF765E902B93C550003E3FBE /* WatchShapeUpExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,10 +231,8 @@
 				CF2FE2F026C7061A0040A985 /* ShapeUpExampleApp.swift */,
 				CF2FE2F226C7061A0040A985 /* ContentView.swift */,
 				CF0FB7F127D7DD6E00B9C775 /* Color+brand.swift */,
-				CF765E752B917403003E3FBE /* CrossPlatform */,
 				CF1B29012AAA3072006FC3D3 /* Corner */,
 				CFCBC9702A181E2600C28E68 /* BasicShapes */,
-				CF1B29032AAA4192006FC3D3 /* CustomShapes */,
 				CFD47CCA27DA431800428F9B /* CornerCustomExample.swift */,
 				CF1B29042AAA424C006FC3D3 /* CodeFeatures */,
 				CFB5482027ECC745009B699A /* RectangleExample.swift */,
@@ -208,6 +261,35 @@
 				CF765E712B914BF2003E3FBE /* CrossPlatformStepper.swift */,
 			);
 			path = CrossPlatform;
+			sourceTree = "<group>";
+		};
+		CF765E912B93C550003E3FBE /* WatchShapeUpExample */ = {
+			isa = PBXGroup;
+			children = (
+				CF765E922B93C550003E3FBE /* WatchShapeUpExampleApp.swift */,
+				CF765E942B93C550003E3FBE /* ContentView.swift */,
+				CF765E962B93C551003E3FBE /* Assets.xcassets */,
+				CF765E982B93C551003E3FBE /* Preview Content */,
+			);
+			path = WatchShapeUpExample;
+			sourceTree = "<group>";
+		};
+		CF765E982B93C551003E3FBE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CF765E992B93C551003E3FBE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF765EA42B93C7B0003E3FBE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CF765E752B917403003E3FBE /* CrossPlatform */,
+				CF1B29032AAA4192006FC3D3 /* CustomShapes */,
+				CF765EA62B93C83A003E3FBE /* SharedAssets.xcassets */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		CFB5482A27ECD2CF009B699A /* MessageBubble */ = {
@@ -258,10 +340,12 @@
 				CF2FE2E926C7061A0040A985 /* Sources */,
 				CF2FE2EA26C7061A0040A985 /* Frameworks */,
 				CF2FE2EB26C7061A0040A985 /* Resources */,
+				CF765E9E2B93C551003E3FBE /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CF765E9C2B93C551003E3FBE /* PBXTargetDependency */,
 			);
 			name = ShapeUpExample;
 			packageProductDependencies = (
@@ -271,6 +355,26 @@
 			productReference = CF2FE2ED26C7061A0040A985 /* ShapeUpExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CF765E8F2B93C550003E3FBE /* WatchShapeUpExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF765EA12B93C551003E3FBE /* Build configuration list for PBXNativeTarget "WatchShapeUpExample" */;
+			buildPhases = (
+				CF765E8C2B93C550003E3FBE /* Sources */,
+				CF765E8D2B93C550003E3FBE /* Frameworks */,
+				CF765E8E2B93C550003E3FBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WatchShapeUpExample;
+			packageProductDependencies = (
+				CF765EA22B93C745003E3FBE /* ShapeUp */,
+			);
+			productName = "WatchShapeUpExample Watch App";
+			productReference = CF765E902B93C550003E3FBE /* WatchShapeUpExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -278,11 +382,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					CF2FE2EC26C7061A0040A985 = {
 						CreatedOnToolsVersion = 12.5.1;
+					};
+					CF765E8F2B93C550003E3FBE = {
+						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
@@ -303,6 +410,7 @@
 			projectRoot = "";
 			targets = (
 				CF2FE2EC26C7061A0040A985 /* ShapeUpExample */,
+				CF765E8F2B93C550003E3FBE /* WatchShapeUpExample */,
 			);
 		};
 /* End PBXProject section */
@@ -312,8 +420,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF765EA72B93C83A003E3FBE /* SharedAssets.xcassets in Resources */,
 				CF2FE2F826C7061C0040A985 /* Preview Assets.xcassets in Resources */,
 				CF2FE2F526C7061C0040A985 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF765E8E2B93C550003E3FBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF765EA82B93C83D003E3FBE /* SharedAssets.xcassets in Resources */,
+				CF765E9A2B93C551003E3FBE /* Preview Assets.xcassets in Resources */,
+				CF765E972B93C551003E3FBE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +460,6 @@
 				CFB5482727ECCEAB009B699A /* MessageBubble3Example.swift in Sources */,
 				CF2FE2F326C7061A0040A985 /* ContentView.swift in Sources */,
 				CFB5482127ECC745009B699A /* RectangleExample.swift in Sources */,
-				CF0FB7F227D7DD6E00B9C775 /* Color+brand.swift in Sources */,
 				CF03C8A227D955E4008B415E /* NotchedPentagonExample.swift in Sources */,
 				CFD47CCF27DA879900428F9B /* BasicCompareExample.swift in Sources */,
 				CFA245F927ED217500953C2B /* RectangleExample2.swift in Sources */,
@@ -363,10 +481,35 @@
 				CFCBC9752A18641A00C28E68 /* CornerExample.swift in Sources */,
 				CFD6965F26F431D4008D58AD /* EmbossExample.swift in Sources */,
 				CF03C8A827D957EB008B415E /* NestedCornerStyleExample.swift in Sources */,
+				CF765EAF2B942ECC003E3FBE /* Color+brand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF765E8C2B93C550003E3FBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF765EAD2B93C935003E3FBE /* CrossPlatformSlider.swift in Sources */,
+				CF765E952B93C550003E3FBE /* ContentView.swift in Sources */,
+				CF765EA92B93C903003E3FBE /* InsetCornerShapeExample.swift in Sources */,
+				CF765EA52B93C7CF003E3FBE /* ShapeUpLogoView.swift in Sources */,
+				CF765EAA2B93C90A003E3FBE /* FoldButton.swift in Sources */,
+				CF765EAE2B93C95A003E3FBE /* HexagonExample.swift in Sources */,
+				CF765E932B93C550003E3FBE /* WatchShapeUpExampleApp.swift in Sources */,
+				CF765EAC2B93C91A003E3FBE /* CrossPlatformStepper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF765E9C2B93C551003E3FBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = CF765E8F2B93C550003E3FBE /* WatchShapeUpExample */;
+			targetProxy = CF765E9B2B93C551003E3FBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CF2FE2FA26C7061C0040A985 /* Debug */ = {
@@ -496,6 +639,7 @@
 		CF2FE2FD26C7061C0040A985 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -524,6 +668,7 @@
 		CF2FE2FE26C7061C0040A985 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -549,6 +694,75 @@
 			};
 			name = Release;
 		};
+		CF765E9F2B93C551003E3FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchShapeUpExample/Preview Content\"";
+				DEVELOPMENT_TEAM = 97423JQ8B9;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchShapeUpExample;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.abetterwaytodo.ShapeUpExample;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abetterwaytodo.ShapeUpExample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		CF765EA02B93C551003E3FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchShapeUpExample/Preview Content\"";
+				DEVELOPMENT_TEAM = 97423JQ8B9;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchShapeUpExample;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.abetterwaytodo.ShapeUpExample;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abetterwaytodo.ShapeUpExample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -570,6 +784,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		CF765EA12B93C551003E3FBE /* Build configuration list for PBXNativeTarget "WatchShapeUpExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF765E9F2B93C551003E3FBE /* Debug */,
+				CF765EA02B93C551003E3FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -587,6 +810,10 @@
 		CF2FE30026C7063D0040A985 /* ShapeUp */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CF2FE2FF26C7063D0040A985 /* XCRemoteSwiftPackageReference "ShapeUp" */;
+			productName = ShapeUp;
+		};
+		CF765EA22B93C745003E3FBE /* ShapeUp */ = {
+			isa = XCSwiftPackageProductDependency;
 			productName = ShapeUp;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -45,6 +45,8 @@ struct HexagonExample: View {
 
 struct HexagonExample_Previews: PreviewProvider {
     static var previews: some View {
-        HexagonExample()
+        ScrollView {
+            HexagonExample()
+        }
     }
 }
