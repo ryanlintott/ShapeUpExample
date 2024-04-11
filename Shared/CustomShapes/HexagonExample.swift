@@ -8,45 +8,50 @@
 import ShapeUp
 import SwiftUI
 
-struct HexagonExample: View {
-    @State private var leftInset: CGFloat = 0.2
+struct QuickHexagonExample: View {
+    /// This property cannot be animated as it goes in the CornerCustom closure
+    let taper: CGFloat
     
     var body: some View {
-        VStack {
             CornerCustom { rect in
                 rect
                     .points(relativeLocations: [
-                        (leftInset, 0),
-                        (0.8, 0),
+                        (taper, 0),
+                        (1 - taper, 0),
                         (1, 0.5),
-                        (0.8, 1),
-                        (leftInset, 1),
+                        (1 - taper, 1),
+                        (taper, 1),
                         (0, 0.5)
                     ])
-                    .corners(.rounded(radius: 5))
+                    .corners(.rounded(radius: 20))
             }
-            .animation(.spring(), value: leftInset)
-            Button("0.2") {
-                leftInset = 0.2
-            }
-            Button("0.6") {
-                leftInset = 0.6
-            }
+    }
+}
+
+struct AdjustableQuickHexagonExample: View {
+    @State private var taper = 0.25
+    
+    var body: some View {
+        VStack {
+            QuickHexagonExample(taper: taper)
+                .aspectRatio(1.1, contentMode: .fit)
+            
             CrossPlatformSlider(
-                label: "Left Inset",
-                value: $leftInset,
+                label: "Taper",
+                value: $taper,
                 minValue: 0,
-                maxValue: 1,
+                maxValue: 0.5,
                 step: 0.1
             )
         }
+        .padding()
     }
 }
 
 struct HexagonExample_Previews: PreviewProvider {
     static var previews: some View {
         ScrollView {
-            HexagonExample()
+            AdjustableQuickHexagonExample()
         }
     }
 }
