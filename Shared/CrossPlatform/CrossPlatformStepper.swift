@@ -35,15 +35,23 @@ struct CrossPlatformStepper<V>: View where V: Strideable, V: CVarArg {
         "%.\(decimalPlaces)f"
     }
     
-    var body: some View {
-        #if os(tvOS)
+    var hStackStepper: some View {
         HStack {
             Text("\(label) \(String(format: format, value))")
             Button("-") { value = max(minValue, value.advanced(by: -step)) }
             Button("+") { value = min(maxValue, value.advanced(by: step)) }
         }
+    }
+    
+    var body: some View {
+        #if os(tvOS)
+        hStackStepper
         #else
-        Stepper("\(label) \(String(format: format, value))", value: $value, in: minValue...maxValue, step: step)
+        if #available(watchOS 9.0, *) {
+            Stepper("\(label) \(String(format: format, value))", value: $value, in: minValue...maxValue, step: step)
+        } else {
+            hStackStepper
+        }
         #endif
     }
 }

@@ -33,7 +33,7 @@
 		CF765E952B93C550003E3FBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF765E942B93C550003E3FBE /* ContentView.swift */; };
 		CF765E972B93C551003E3FBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF765E962B93C551003E3FBE /* Assets.xcassets */; };
 		CF765E9A2B93C551003E3FBE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF765E992B93C551003E3FBE /* Preview Assets.xcassets */; };
-		CF765E9D2B93C551003E3FBE /* WatchShapeUpExample.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CF765E902B93C550003E3FBE /* WatchShapeUpExample.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CF765E9D2B93C551003E3FBE /* WatchShapeUp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CF765E902B93C550003E3FBE /* WatchShapeUp.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CF765EA32B93C745003E3FBE /* ShapeUp in Frameworks */ = {isa = PBXBuildFile; productRef = CF765EA22B93C745003E3FBE /* ShapeUp */; };
 		CF765EA52B93C7CF003E3FBE /* ShapeUpLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30326C706AD0040A985 /* ShapeUpLogoView.swift */; };
 		CF765EA72B93C83A003E3FBE /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF765EA62B93C83A003E3FBE /* SharedAssets.xcassets */; };
@@ -81,7 +81,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				CF765E9D2B93C551003E3FBE /* WatchShapeUpExample.app in Embed Watch Content */,
+				CF765E9D2B93C551003E3FBE /* WatchShapeUp.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,7 +112,7 @@
 		CF741BA528C298E800C59C65 /* InsettableShapeByPropertyExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsettableShapeByPropertyExample.swift; sourceTree = "<group>"; };
 		CF765E6F2B913AD5003E3FBE /* CrossPlatformSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatformSlider.swift; sourceTree = "<group>"; };
 		CF765E712B914BF2003E3FBE /* CrossPlatformStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatformStepper.swift; sourceTree = "<group>"; };
-		CF765E902B93C550003E3FBE /* WatchShapeUpExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchShapeUpExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF765E902B93C550003E3FBE /* WatchShapeUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchShapeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF765E922B93C550003E3FBE /* WatchShapeUpExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchShapeUpExampleApp.swift; sourceTree = "<group>"; };
 		CF765E942B93C550003E3FBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CF765E962B93C551003E3FBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -218,7 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				CF2FE2ED26C7061A0040A985 /* ShapeUpExample.app */,
-				CF765E902B93C550003E3FBE /* WatchShapeUpExample.app */,
+				CF765E902B93C550003E3FBE /* WatchShapeUp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -369,7 +369,7 @@
 				CF765EA22B93C745003E3FBE /* ShapeUp */,
 			);
 			productName = "WatchShapeUpExample Watch App";
-			productReference = CF765E902B93C550003E3FBE /* WatchShapeUpExample.app */;
+			productReference = CF765E902B93C550003E3FBE /* WatchShapeUp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -645,6 +645,7 @@
 				DEVELOPMENT_TEAM = 97423JQ8B9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ShapeUpExample/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -660,6 +661,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3,7";
 				TVOS_DEPLOYMENT_TARGET = 14.0;
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Debug;
 		};
@@ -674,6 +676,7 @@
 				DEVELOPMENT_TEAM = 97423JQ8B9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ShapeUpExample/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -689,6 +692,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3,7";
 				TVOS_DEPLOYMENT_TARGET = 14.0;
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Release;
 		};
@@ -706,7 +710,6 @@
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = WatchShapeUpExample;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.abetterwaytodo.ShapeUpExample;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -716,14 +719,14 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abetterwaytodo.ShapeUpExample.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WatchShapeUp;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Debug;
 		};
@@ -741,7 +744,6 @@
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = WatchShapeUpExample;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.abetterwaytodo.ShapeUpExample;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -751,13 +753,13 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abetterwaytodo.ShapeUpExample.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WatchShapeUp;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Release;
 		};
