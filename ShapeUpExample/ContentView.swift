@@ -12,6 +12,7 @@ struct ContentView: View {
         Image("ShapeUp-logo")
             .resizable()
             .scaledToFit()
+            .accessibilityIgnoresInvertColors()
             .frame(maxWidth: 400)
             .padding()
     }
