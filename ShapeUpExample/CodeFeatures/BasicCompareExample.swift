@@ -30,8 +30,8 @@ struct SwiftUIBasicShape: Shape {
 }
 
 struct ShapeUpBasicShape: CornerShape {
+    let closed: Bool = true
     var insetAmount: CGFloat = 0
-    var closed: Bool = true
     
     func corners(in rect: CGRect) -> [Corner] {
         [

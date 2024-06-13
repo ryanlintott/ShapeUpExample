@@ -5,14 +5,15 @@
 //  Created by Ryan Lintott on 2023-09-06.
 //
 
-#if swift(>=999)
-//#if swift(>=5.9)
+/// AnimatablePack uses parameter pack iteration that is only available in swift 6.0
+/// https://forums.swift.org/t/pitch-enable-pack-iteration/66168
+#if compiler(>=6.0)
 import ShapeUp
 import SwiftUI
 
-@available(iOS 17, macOS 14, *)
+@available(iOS 17, macOS 14, watchOS 10, tvOS 17, *)
 struct AnimatablePackShape: CornerShape, Animatable {
-    var closed: Bool = true
+    let closed: Bool = true
     var insetAmount: CGFloat = 0
     
     var cornerRadius: RelatableValue
@@ -24,13 +25,21 @@ struct AnimatablePackShape: CornerShape, Animatable {
             .rotated(rotation, anchor: rect.point(.center))
     }
     
-    var animatableData: AnimatablePack<CGFloat, RelatableValue, Double> {
-        get { AnimatablePack(insetAmount, cornerRadius, rotation.radians) }
-        set { (insetAmount, cornerRadius, rotation.radians) = newValue() }
+    nonisolated var animatableData: AnimatablePack<CGFloat, RelatableValue, Double> {
+        get {
+            MainActor.assumeIsolated {
+                AnimatablePack(insetAmount, cornerRadius, rotation.radians)
+            }
+        }
+        set {
+            MainActor.assumeIsolated {
+                (insetAmount, cornerRadius, rotation.radians) = newValue()
+            }
+        }
     }
 }
 
-@available(iOS 17, macOS 14, *)
+@available(iOS 17, macOS 14, watchOS 10, tvOS 17, *)
 struct AnimatablePackExample: View {
     @State private var insetAmount: Double = 0
     @State private var cornerRadius: Double = 40
@@ -55,7 +64,7 @@ struct AnimatablePackExample: View {
         
             CrossPlatformStepper(
                 label: "Inset",
-                value: $inset,
+                value: $insetAmount,
                 minValue: -30,
                 maxValue: 30,
                 step: 10
@@ -71,7 +80,7 @@ struct AnimatablePackExample: View {
             
             CrossPlatformStepper(
                 label: "Rotation Angle",
-                value: $cornerRadius,
+                value: $rotation,
                 minValue: -720,
                 maxValue: 720,
                 step: 45
@@ -82,7 +91,7 @@ struct AnimatablePackExample: View {
     }
 }
 
-@available(iOS 17, macOS 14, *)
+@available(iOS 17, macOS 14, watchOS 10, tvOS 17, *)
 struct AnimatablePackExample_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {

@@ -14,11 +14,11 @@
 		CF03C8A427D956AA008B415E /* NotchedExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03C8A327D956AA008B415E /* NotchedExamples.swift */; };
 		CF03C8A627D95748008B415E /* NotchedTriangleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03C8A527D95748008B415E /* NotchedTriangleExample.swift */; };
 		CF03C8A827D957EB008B415E /* NestedCornerStyleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03C8A727D957EB008B415E /* NestedCornerStyleExample.swift */; };
+		CF1B94872C1B273A00EA6AB2 /* ShapeUp in Frameworks */ = {isa = PBXBuildFile; productRef = CF1B94862C1B273A00EA6AB2 /* ShapeUp */; };
 		CF2FE2F126C7061A0040A985 /* ShapeUpExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE2F026C7061A0040A985 /* ShapeUpExampleApp.swift */; };
 		CF2FE2F326C7061A0040A985 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE2F226C7061A0040A985 /* ContentView.swift */; };
 		CF2FE2F526C7061C0040A985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2FE2F426C7061C0040A985 /* Assets.xcassets */; };
 		CF2FE2F826C7061C0040A985 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2FE2F726C7061C0040A985 /* Preview Assets.xcassets */; };
-		CF2FE30126C7063D0040A985 /* ShapeUp in Frameworks */ = {isa = PBXBuildFile; productRef = CF2FE30026C7063D0040A985 /* ShapeUp */; };
 		CF2FE30426C706AD0040A985 /* ShapeUpLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30326C706AD0040A985 /* ShapeUpLogoView.swift */; };
 		CF2FE30626C706EE0040A985 /* CornerRectangleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30526C706EE0040A985 /* CornerRectangleExample.swift */; };
 		CF2FE30826C708D20040A985 /* CornerShapeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30726C708D20040A985 /* CornerShapeExample.swift */; };
@@ -119,7 +119,7 @@
 		CF765E992B93C551003E3FBE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF765EA62B93C83A003E3FBE /* SharedAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SharedAssets.xcassets; sourceTree = "<group>"; };
 		CF78EF5B27F500C200F67ED0 /* FoldButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldButton.swift; sourceTree = "<group>"; };
-		CF91518D27C8189100328D30 /* ShapeUp */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ShapeUp; path = ../ShapeUp; sourceTree = "<group>"; };
+		CF86794E2C1B3C2800036AC6 /* ShapeUp */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ShapeUp; path = ../ShapeUp; sourceTree = "<group>"; };
 		CFA165AB27B7044700C0EFDB /* InsetCornerShapeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetCornerShapeExample.swift; sourceTree = "<group>"; };
 		CFA245F627ECFBA100953C2B /* MessageBubbleInsetExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleInsetExample.swift; sourceTree = "<group>"; };
 		CFA245F827ED217500953C2B /* RectangleExample2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleExample2.swift; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF2FE30126C7063D0040A985 /* ShapeUp in Frameworks */,
+				CF1B94872C1B273A00EA6AB2 /* ShapeUp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +206,7 @@
 		CF2FE2E426C7061A0040A985 = {
 			isa = PBXGroup;
 			children = (
-				CF91518D27C8189100328D30 /* ShapeUp */,
+				CF86794E2C1B3C2800036AC6 /* ShapeUp */,
 				CF765EA42B93C7B0003E3FBE /* Shared */,
 				CF2FE2EF26C7061A0040A985 /* ShapeUpExample */,
 				CF765E912B93C550003E3FBE /* WatchShapeUpExample */,
@@ -346,7 +346,7 @@
 			);
 			name = ShapeUpExample;
 			packageProductDependencies = (
-				CF2FE30026C7063D0040A985 /* ShapeUp */,
+				CF1B94862C1B273A00EA6AB2 /* ShapeUp */,
 			);
 			productName = ShapeUpExample;
 			productReference = CF2FE2ED26C7061A0040A985 /* ShapeUpExample.app */;
@@ -400,7 +400,7 @@
 			);
 			mainGroup = CF2FE2E426C7061A0040A985;
 			packageReferences = (
-				CF2FE2FF26C7063D0040A985 /* XCRemoteSwiftPackageReference "ShapeUp" */,
+				CF1B94852C1B273A00EA6AB2 /* XCRemoteSwiftPackageReference "ShapeUp" */,
 			);
 			productRefGroup = CF2FE2EE26C7061A0040A985 /* Products */;
 			projectDirPath = "";
@@ -798,20 +798,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CF2FE2FF26C7063D0040A985 /* XCRemoteSwiftPackageReference "ShapeUp" */ = {
+		CF1B94852C1B273A00EA6AB2 /* XCRemoteSwiftPackageReference "ShapeUp" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ryanlintott/ShapeUp.git";
 			requirement = {
-				branch = main;
+				branch = beta;
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CF2FE30026C7063D0040A985 /* ShapeUp */ = {
+		CF1B94862C1B273A00EA6AB2 /* ShapeUp */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CF2FE2FF26C7063D0040A985 /* XCRemoteSwiftPackageReference "ShapeUp" */;
+			package = CF1B94852C1B273A00EA6AB2 /* XCRemoteSwiftPackageReference "ShapeUp" */;
 			productName = ShapeUp;
 		};
 		CF765EA22B93C745003E3FBE /* ShapeUp */ = {
