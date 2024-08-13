@@ -9,7 +9,6 @@ import ShapeUp
 import SwiftUI
 
 struct MessageBubbleInsetExample: View {
-    @MainActor
     var messageBubble: CornerCustom {
         CornerCustom { rect in
             rect.corners(.rounded(radius: 20))

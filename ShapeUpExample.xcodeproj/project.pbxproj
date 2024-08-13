@@ -25,6 +25,7 @@
 		CF2FE30A26C70DC30040A985 /* NotchedRectangleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30926C70DC30040A985 /* NotchedRectangleExample.swift */; };
 		CF2FE30C26C7124B0040A985 /* BasicShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30B26C7124B0040A985 /* BasicShapes.swift */; };
 		CF2FE30E26C7145A0040A985 /* SketchyLineExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30D26C7145A0040A985 /* SketchyLineExample.swift */; };
+		CF49FFC42C66861000217E87 /* TestShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF49FFC32C66861000217E87 /* TestShape.swift */; };
 		CF6E1FA527B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6E1FA427B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift */; };
 		CF741BA628C298E800C59C65 /* InsettableShapeByPropertyExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF741BA528C298E800C59C65 /* InsettableShapeByPropertyExample.swift */; };
 		CF765E702B913AD5003E3FBE /* CrossPlatformSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF765E6F2B913AD5003E3FBE /* CrossPlatformSlider.swift */; };
@@ -108,6 +109,7 @@
 		CF2FE30926C70DC30040A985 /* NotchedRectangleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchedRectangleExample.swift; sourceTree = "<group>"; };
 		CF2FE30B26C7124B0040A985 /* BasicShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicShapes.swift; sourceTree = "<group>"; };
 		CF2FE30D26C7145A0040A985 /* SketchyLineExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchyLineExample.swift; sourceTree = "<group>"; };
+		CF49FFC32C66861000217E87 /* TestShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestShape.swift; sourceTree = "<group>"; };
 		CF6E1FA427B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOpenCornerShapeExample.swift; sourceTree = "<group>"; };
 		CF741BA528C298E800C59C65 /* InsettableShapeByPropertyExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsettableShapeByPropertyExample.swift; sourceTree = "<group>"; };
 		CF765E6F2B913AD5003E3FBE /* CrossPlatformSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatformSlider.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			children = (
 				CF2FE2F026C7061A0040A985 /* ShapeUpExampleApp.swift */,
 				CF2FE2F226C7061A0040A985 /* ContentView.swift */,
+				CF49FFC32C66861000217E87 /* TestShape.swift */,
 				CF1B29012AAA3072006FC3D3 /* Corner */,
 				CFCBC9702A181E2600C28E68 /* BasicShapes */,
 				CFD47CCA27DA431800428F9B /* CornerCustomExample.swift */,
@@ -471,6 +474,7 @@
 				CFFEAF1127F269790086ECC5 /* HexagonExample.swift in Sources */,
 				CF03C8A027D9506E008B415E /* CornerPentagonExample.swift in Sources */,
 				CF78EF5C27F500C200F67ED0 /* FoldButton.swift in Sources */,
+				CF49FFC42C66861000217E87 /* TestShape.swift in Sources */,
 				CF03C89E27D94E7C008B415E /* CornerTriangleExample.swift in Sources */,
 				CFB5482327ECCA3B009B699A /* MessageBubble1Example.swift in Sources */,
 				CFA165AC27B7044700C0EFDB /* InsetCornerShapeExample.swift in Sources */,
@@ -659,7 +663,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3,7";
 				TVOS_DEPLOYMENT_TARGET = 14.0;
 				XROS_DEPLOYMENT_TARGET = 1.0;
@@ -691,7 +695,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3,7";
 				TVOS_DEPLOYMENT_TARGET = 14.0;
 				XROS_DEPLOYMENT_TARGET = 1.0;
@@ -726,7 +730,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
@@ -759,7 +763,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};

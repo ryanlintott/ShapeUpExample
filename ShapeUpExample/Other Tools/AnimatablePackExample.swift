@@ -12,8 +12,8 @@ import ShapeUp
 import SwiftUI
 
 @available(iOS 17, macOS 14, watchOS 10, tvOS 17, *)
-struct AnimatablePackShape: CornerShape, Animatable {
-    let closed: Bool = true
+struct AnimatablePackShape: CornerShape {
+    var closed: Bool = true
     var insetAmount: CGFloat = 0
     
     var cornerRadius: RelatableValue
@@ -27,14 +27,10 @@ struct AnimatablePackShape: CornerShape, Animatable {
     
     nonisolated var animatableData: AnimatablePack<CGFloat, RelatableValue, Double> {
         get {
-            MainActor.assumeIsolated {
-                AnimatablePack(insetAmount, cornerRadius, rotation.radians)
-            }
+            AnimatablePack(insetAmount, cornerRadius, rotation.radians)
         }
         set {
-            MainActor.assumeIsolated {
-                (insetAmount, cornerRadius, rotation.radians) = newValue()
-            }
+            (insetAmount, cornerRadius, rotation.radians) = newValue()
         }
     }
 }
