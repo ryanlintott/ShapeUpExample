@@ -25,7 +25,7 @@ struct AnimatablePackShape: CornerShape {
             .rotated(rotation, anchor: rect.point(.center))
     }
     
-    nonisolated var animatableData: AnimatablePack<CGFloat, RelatableValue, Double> {
+    var animatableData: AnimatablePack<CGFloat, RelatableValue, Double> {
         get {
             AnimatablePack(insetAmount, cornerRadius, rotation.radians)
         }

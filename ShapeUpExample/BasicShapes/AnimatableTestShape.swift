@@ -19,7 +19,7 @@ struct AnimatableTestShape: Shape {
         }
     }
     
-    nonisolated func path(in rect: CGRect) -> Path {
+    func path(in rect: CGRect) -> Path {
         var path = Path()
         path.addRect(rect.insetBy(dx: insetAmount, dy: insetAmount))
         return path
