@@ -11,12 +11,8 @@ struct AnimatableTestShape: Shape {
     var insetAmount: Double
     
     var animatableData: Double {
-        get {
-            insetAmount
-        }
-        set {
-            insetAmount = newValue
-        }
+        get { insetAmount }
+        set { insetAmount = newValue }
     }
     
     func path(in rect: CGRect) -> Path {
