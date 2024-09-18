@@ -14,17 +14,18 @@
 		CF03C8A427D956AA008B415E /* NotchedExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03C8A327D956AA008B415E /* NotchedExamples.swift */; };
 		CF03C8A627D95748008B415E /* NotchedTriangleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03C8A527D95748008B415E /* NotchedTriangleExample.swift */; };
 		CF03C8A827D957EB008B415E /* NestedCornerStyleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03C8A727D957EB008B415E /* NestedCornerStyleExample.swift */; };
+		CF1B94872C1B273A00EA6AB2 /* ShapeUp in Frameworks */ = {isa = PBXBuildFile; productRef = CF1B94862C1B273A00EA6AB2 /* ShapeUp */; };
 		CF2FE2F126C7061A0040A985 /* ShapeUpExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE2F026C7061A0040A985 /* ShapeUpExampleApp.swift */; };
 		CF2FE2F326C7061A0040A985 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE2F226C7061A0040A985 /* ContentView.swift */; };
 		CF2FE2F526C7061C0040A985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2FE2F426C7061C0040A985 /* Assets.xcassets */; };
 		CF2FE2F826C7061C0040A985 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2FE2F726C7061C0040A985 /* Preview Assets.xcassets */; };
-		CF2FE30126C7063D0040A985 /* ShapeUp in Frameworks */ = {isa = PBXBuildFile; productRef = CF2FE30026C7063D0040A985 /* ShapeUp */; };
 		CF2FE30426C706AD0040A985 /* ShapeUpLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30326C706AD0040A985 /* ShapeUpLogoView.swift */; };
 		CF2FE30626C706EE0040A985 /* CornerRectangleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30526C706EE0040A985 /* CornerRectangleExample.swift */; };
 		CF2FE30826C708D20040A985 /* CornerShapeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30726C708D20040A985 /* CornerShapeExample.swift */; };
 		CF2FE30A26C70DC30040A985 /* NotchedRectangleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30926C70DC30040A985 /* NotchedRectangleExample.swift */; };
 		CF2FE30C26C7124B0040A985 /* BasicShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30B26C7124B0040A985 /* BasicShapes.swift */; };
 		CF2FE30E26C7145A0040A985 /* SketchyLineExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FE30D26C7145A0040A985 /* SketchyLineExample.swift */; };
+		CF49FFC42C66861000217E87 /* AnimatableTestShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF49FFC32C66861000217E87 /* AnimatableTestShape.swift */; };
 		CF6E1FA527B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6E1FA427B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift */; };
 		CF741BA628C298E800C59C65 /* InsettableShapeByPropertyExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF741BA528C298E800C59C65 /* InsettableShapeByPropertyExample.swift */; };
 		CF765E702B913AD5003E3FBE /* CrossPlatformSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF765E6F2B913AD5003E3FBE /* CrossPlatformSlider.swift */; };
@@ -108,6 +109,7 @@
 		CF2FE30926C70DC30040A985 /* NotchedRectangleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchedRectangleExample.swift; sourceTree = "<group>"; };
 		CF2FE30B26C7124B0040A985 /* BasicShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicShapes.swift; sourceTree = "<group>"; };
 		CF2FE30D26C7145A0040A985 /* SketchyLineExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchyLineExample.swift; sourceTree = "<group>"; };
+		CF49FFC32C66861000217E87 /* AnimatableTestShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableTestShape.swift; sourceTree = "<group>"; };
 		CF6E1FA427B6CC8A00D1F169 /* AddOpenCornerShapeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOpenCornerShapeExample.swift; sourceTree = "<group>"; };
 		CF741BA528C298E800C59C65 /* InsettableShapeByPropertyExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsettableShapeByPropertyExample.swift; sourceTree = "<group>"; };
 		CF765E6F2B913AD5003E3FBE /* CrossPlatformSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatformSlider.swift; sourceTree = "<group>"; };
@@ -119,7 +121,7 @@
 		CF765E992B93C551003E3FBE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF765EA62B93C83A003E3FBE /* SharedAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SharedAssets.xcassets; sourceTree = "<group>"; };
 		CF78EF5B27F500C200F67ED0 /* FoldButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldButton.swift; sourceTree = "<group>"; };
-		CF91518D27C8189100328D30 /* ShapeUp */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ShapeUp; path = ../ShapeUp; sourceTree = "<group>"; };
+		CF86794E2C1B3C2800036AC6 /* ShapeUp */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ShapeUp; path = ../ShapeUp; sourceTree = "<group>"; };
 		CFA165AB27B7044700C0EFDB /* InsetCornerShapeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetCornerShapeExample.swift; sourceTree = "<group>"; };
 		CFA245F627ECFBA100953C2B /* MessageBubbleInsetExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleInsetExample.swift; sourceTree = "<group>"; };
 		CFA245F827ED217500953C2B /* RectangleExample2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleExample2.swift; sourceTree = "<group>"; };
@@ -145,7 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF2FE30126C7063D0040A985 /* ShapeUp in Frameworks */,
+				CF1B94872C1B273A00EA6AB2 /* ShapeUp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +208,7 @@
 		CF2FE2E426C7061A0040A985 = {
 			isa = PBXGroup;
 			children = (
-				CF91518D27C8189100328D30 /* ShapeUp */,
+				CF86794E2C1B3C2800036AC6 /* ShapeUp */,
 				CF765EA42B93C7B0003E3FBE /* Shared */,
 				CF2FE2EF26C7061A0040A985 /* ShapeUpExample */,
 				CF765E912B93C550003E3FBE /* WatchShapeUpExample */,
@@ -312,6 +314,7 @@
 				CFCBC9762A19236E00C28E68 /* CornerTriangleExample2.swift */,
 				CF03C89F27D9506E008B415E /* CornerPentagonExample.swift */,
 				CFCBC9782A1961AE00C28E68 /* CornerPentagonExample2.swift */,
+				CF49FFC32C66861000217E87 /* AnimatableTestShape.swift */,
 			);
 			path = BasicShapes;
 			sourceTree = "<group>";
@@ -346,7 +349,7 @@
 			);
 			name = ShapeUpExample;
 			packageProductDependencies = (
-				CF2FE30026C7063D0040A985 /* ShapeUp */,
+				CF1B94862C1B273A00EA6AB2 /* ShapeUp */,
 			);
 			productName = ShapeUpExample;
 			productReference = CF2FE2ED26C7061A0040A985 /* ShapeUpExample.app */;
@@ -380,7 +383,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					CF2FE2EC26C7061A0040A985 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -400,7 +403,7 @@
 			);
 			mainGroup = CF2FE2E426C7061A0040A985;
 			packageReferences = (
-				CF2FE2FF26C7063D0040A985 /* XCRemoteSwiftPackageReference "ShapeUp" */,
+				CF1B94852C1B273A00EA6AB2 /* XCRemoteSwiftPackageReference "ShapeUp" */,
 			);
 			productRefGroup = CF2FE2EE26C7061A0040A985 /* Products */;
 			projectDirPath = "";
@@ -471,6 +474,7 @@
 				CFFEAF1127F269790086ECC5 /* HexagonExample.swift in Sources */,
 				CF03C8A027D9506E008B415E /* CornerPentagonExample.swift in Sources */,
 				CF78EF5C27F500C200F67ED0 /* FoldButton.swift in Sources */,
+				CF49FFC42C66861000217E87 /* AnimatableTestShape.swift in Sources */,
 				CF03C89E27D94E7C008B415E /* CornerTriangleExample.swift in Sources */,
 				CFB5482327ECCA3B009B699A /* MessageBubble1Example.swift in Sources */,
 				CFA165AC27B7044700C0EFDB /* InsetCornerShapeExample.swift in Sources */,
@@ -637,10 +641,11 @@
 		CF2FE2FD26C7061C0040A985 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ShapeUpExample/Preview Content\"";
 				DEVELOPMENT_TEAM = 97423JQ8B9;
 				ENABLE_PREVIEWS = YES;
@@ -653,13 +658,14 @@
 					"@executable_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abetterwaytodo.ShapeUpExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3,7";
 				TVOS_DEPLOYMENT_TARGET = 14.0;
 				XROS_DEPLOYMENT_TARGET = 1.0;
@@ -669,10 +675,11 @@
 		CF2FE2FE26C7061C0040A985 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ShapeUpExample/Preview Content\"";
 				DEVELOPMENT_TEAM = 97423JQ8B9;
 				ENABLE_PREVIEWS = YES;
@@ -685,13 +692,14 @@
 					"@executable_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abetterwaytodo.ShapeUpExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3,7";
 				TVOS_DEPLOYMENT_TARGET = 14.0;
 				XROS_DEPLOYMENT_TARGET = 1.0;
@@ -726,7 +734,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
@@ -759,7 +767,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
@@ -798,20 +806,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CF2FE2FF26C7063D0040A985 /* XCRemoteSwiftPackageReference "ShapeUp" */ = {
+		CF1B94852C1B273A00EA6AB2 /* XCRemoteSwiftPackageReference "ShapeUp" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ryanlintott/ShapeUp.git";
 			requirement = {
-				branch = main;
+				branch = beta;
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CF2FE30026C7063D0040A985 /* ShapeUp */ = {
+		CF1B94862C1B273A00EA6AB2 /* ShapeUp */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CF2FE2FF26C7063D0040A985 /* XCRemoteSwiftPackageReference "ShapeUp" */;
+			package = CF1B94852C1B273A00EA6AB2 /* XCRemoteSwiftPackageReference "ShapeUp" */;
 			productName = ShapeUp;
 		};
 		CF765EA22B93C745003E3FBE /* ShapeUp */ = {

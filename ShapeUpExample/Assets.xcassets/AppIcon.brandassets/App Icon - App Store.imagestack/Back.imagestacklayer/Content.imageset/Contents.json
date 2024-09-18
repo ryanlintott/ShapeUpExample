@@ -1,8 +1,8 @@
 {
   "images" : [
     {
-      "idiom" : "vision",
-      "scale" : "2x"
+      "filename" : "ShapeUp-icon-tvOS-back.png",
+      "idiom" : "tv"
     }
   ],
   "info" : {

@@ -74,12 +74,9 @@ struct ContentView: View {
                 Label("Emboss", systemImage: "rectangle.dashed")
             }
             
-            /// Crashes only with release build possibly due to writing past the end of a function local array
-            /// https://stackoverflow.com/questions/186237/program-only-crashes-as-release-build-how-to-debug
-            /// Waiting for iterable parameter pack feature to be added to swift as it may fix this issue
+            /// AnimatablePack uses parameter pack iteration that is only available in swift 6.0
             /// https://forums.swift.org/t/pitch-enable-pack-iteration/66168
-//            #if swift(>=5.9)
-            #if swift(>=999)
+            #if compiler(>=6.0)
             if #available(iOS 17, macOS 14, watchOS 10, tvOS 17, *) {
                 NavigationLink(destination: AnimatablePackExample()) {
                     Label("AnimatablePack", systemImage: "slider.horizontal.3")

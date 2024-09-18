@@ -2,7 +2,7 @@
   "images" : [
     {
       "filename" : "ShapeUp-icon-visionOS-back.png",
-      "idiom" : "reality",
+      "idiom" : "vision",
       "scale" : "2x"
     }
   ],

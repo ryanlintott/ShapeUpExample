@@ -9,16 +9,18 @@ import ShapeUp
 import SwiftUI
 
 struct MessageBubbleInsetExample: View {
-    let messageBubble = CornerCustom { rect in
-        rect.corners(.rounded(radius: 20))
-            .addingNotch(
-                .triangle(depth: -20, cornerStyles: [
-                    .rounded(radius: 10),
-                    .point,
-                    .rounded(radius: 10)
-                ]),
-                afterCornerIndex: 2
-            )
+    var messageBubble: CornerCustom {
+        CornerCustom { rect in
+            rect.corners(.rounded(radius: 20))
+                .addingNotch(
+                    .triangle(depth: -20, cornerStyles: [
+                        .rounded(radius: 10),
+                        .point,
+                        .rounded(radius: 10)
+                    ]),
+                    afterCornerIndex: 2
+                )
+        }
     }
     
     let colors: [Color] = [.suCyan, .suPink, .suWhite, .suYellow]

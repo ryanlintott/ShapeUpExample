@@ -9,7 +9,7 @@ import ShapeUp
 import SwiftUI
 
 struct MessageBubble2: CornerShape {
-    var closed: Bool = true
+    let closed: Bool = true
     var insetAmount: CGFloat = 0
     
     let cornerRadius: RelatableValue
