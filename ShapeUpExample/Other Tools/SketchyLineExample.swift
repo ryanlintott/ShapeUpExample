@@ -24,7 +24,7 @@ struct SketchyLineExample: View {
             Text("Baseline")
                 .font(.system(size: 32))
                 .alignmentGuide(.bottom) { d in
-                    return d[.firstTextBaseline]
+                    d[.firstTextBaseline]
                 }
                 .background(
                     SketchyLines(lines: [
@@ -50,6 +50,14 @@ struct SketchyLineExample: View {
                         .stroke(Color.suPink, lineWidth: 2)
                     , alignment: .bottom
                 )
+            
+            Spacer()
+            
+            Button("Animate") {
+                withAnimation {
+                    drawAmount = drawAmount < 1 ? 1 : 0
+                }
+            }
             
             Spacer()
             
